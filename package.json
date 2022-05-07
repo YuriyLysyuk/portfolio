@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "Website of Yuriy Lysyuk's portfolio",
+  "private": true,
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lysyuk/portfolio"
+  },
+  "author": "Yuriy Lysyuk",
+  "license": "ISC"
+}
