@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "description": "Website of Yuriy Lysyuk's portfolio",
   "private": true,
-  "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "webpack serve --open",
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/lysyuk/portfolio"
