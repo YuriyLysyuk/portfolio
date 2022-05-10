@@ -25,6 +25,7 @@
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
+    "include-media": "^1.4.10",
     "scss-reset": "^1.2.2"
   }
 }
