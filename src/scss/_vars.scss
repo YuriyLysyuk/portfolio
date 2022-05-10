@@ -33,12 +33,15 @@ $white: #fff;
 $black: #000;
 $gray: #ccc;
 
-$text-color: $black;
-$inverted-text-color: $white;
 /**
  * Mixing Colors
  */
 
+$body-bg-color: #010c15;
+$layout-bg-color: #011627;
+$text-color: $white;
+$inverted-text-color: $black;
+$border-color: #1e2d3d;
 /**
  * Include media
  */
