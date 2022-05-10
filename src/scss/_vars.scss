@@ -41,7 +41,18 @@ $body-bg-color: #010c15;
 $layout-bg-color: #011627;
 $text-color: $white;
 $inverted-text-color: $black;
+$menu-color: #607b96;
+$social-color: #607b96;
+$social-hover-color: #607b96;
+$accent-color: #fea55f;
 $border-color: #1e2d3d;
+
+/**
+ * Margin, padding, gap
+ */
+
+$gap: 1rem;
+
 /**
  * Include media
  */
