@@ -1,5 +1,8 @@
-@import 'scss-reset/src/scss/_reset.scss';
+/**
+ * Main
+ */
 
+@import 'scss-reset/src/scss/_reset.scss';
 @import 'vars';
 @import 'typography';
 @import 'include-media/dist/include-media';
