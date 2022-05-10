@@ -16,7 +16,7 @@ module.exports = {
     port: 9000,
   },
 
-  devtool: 'eval-cheap-module-source-map',
+  devtool: 'source-map',
 
   output: {
     path: path.resolve(__dirname, './dist'),
