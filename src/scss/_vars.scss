@@ -2,9 +2,9 @@
  * Variables
  */
 
-/*
+/**
  * Fonts
- * ========================================================================== */
+ */
 
 $font-family: 'Fira Code', monospace;
 $font-family-title: 'Fira Code', monospace;
@@ -19,13 +19,13 @@ $basic-font-size: 62.5%;
 $paragraph: 1.8rem;
 $line-height: 2.4rem;
 
-/*
-  * Palette
-  * ========================================================================== */
+/**
+ * Pallete
+ */
 
-/*
-  * Basic Colors
-  * ========================================================================== */
+/**
+ * Basic Colors
+ */
 
 $blue: #00f;
 $red: #f00;
@@ -33,8 +33,9 @@ $white: #fff;
 $black: #000;
 $gray: #ccc;
 
-/*
-  * Mixing Colors
-  * ========================================================================== */
 $text-color: $black;
 $inverted-text-color: $white;
+/**
+ * Mixing Colors
+ */
+
