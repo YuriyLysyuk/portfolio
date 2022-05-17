@@ -24,6 +24,10 @@ body {
   @include media('>=sm') {
     padding: 3rem;
   }
+
+  @include media('>=xxl') {
+    padding: 7rem;
+  }
 }
 
 h1,
