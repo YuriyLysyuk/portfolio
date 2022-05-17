@@ -1,0 +1,77 @@
+/**
+ * Variables
+ */
+
+/**
+ * Fonts
+ */
+
+$font-family: 'Fira Code', monospace;
+$font-family-title: 'Fira Code', monospace;
+
+$body-font: $font-family;
+$body-font-weight: 400;
+
+$header-font: $font-family-title;
+
+// For REM / EM
+$basic-font-size: 62.5%;
+$paragraph: 1.8rem;
+$line-height: 2.4rem;
+
+/**
+ * Pallete
+ */
+
+/**
+ * Basic Colors
+ */
+
+$blue: #00f;
+$red: #f00;
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+
+/**
+ * Mixing Colors
+ */
+
+$body-bg-color: #010c15;
+$layout-bg-color: #011627;
+$text-color: $white;
+$inverted-text-color: $black;
+$menu-color: #607b96;
+$social-color: #607b96;
+$social-hover-color: #607b96;
+$accent-color: #fea55f;
+$border-color: #1e2d3d;
+
+/**
+ * Margins, paddings, gaps, borders
+ */
+
+$gap: 1rem;
+$border-width: 0.1rem;
+
+/**
+ * Include media
+ */
+
+$breakpoints: (
+  xs: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+$mobile-menu-breakpoint: lg;
+
+/**
+ * CSS variables
+ */
+
+:root {
+  --main-node-height: auto;
+}

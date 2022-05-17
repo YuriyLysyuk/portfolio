@@ -1,0 +1,18 @@
+/**
+ * Main
+ */
+
+@import 'scss-reset/src/scss/_reset.scss';
+@import 'fonts';
+@import 'vars';
+@import 'include-media/dist/include-media';
+@import 'placeholders';
+
+@import 'base';
+@import 'layout';
+@import 'components/nav';
+
+.svg-inline--fa {
+  width: 2.4rem;
+  height: 2.4rem;
+}
