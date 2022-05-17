@@ -1,14 +1,5 @@
 'use strict';
 
-function updateMobileMenuHeight() {
-  const mainNode = document.querySelector('.js-main');
-
-  document.documentElement.style.setProperty(
-    '--main-node-height',
-    `${mainNode.clientHeight}px`
-  );
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', updateMobileMenuHeight);
 
@@ -17,3 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
     updateMobileMenuHeight();
   }, 200);
 });
+
+function updateMobileMenuHeight() {
+  const mainNode = document.querySelector('.js-main');
+
+  document.documentElement.style.setProperty(
+    '--main-node-height',
+    `${mainNode.clientHeight}px`
+  );
+}
