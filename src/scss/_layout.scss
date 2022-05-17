@@ -9,7 +9,7 @@
   height: 100%;
 
   background-color: $layout-bg-color;
-  border: 0.1rem solid $border-color;
+  border: $border-width solid $border-color;
   border-radius: 0.8rem;
 }
 
@@ -23,14 +23,14 @@
   line-height: 2.1rem;
 }
 
-.header {
-  border-bottom: 0.1rem solid $border-color;
-}
-
 .main {
   flex-grow: 2;
 }
 
+.header {
+  border-bottom: $border-width solid $border-color;
+}
+
 .footer {
-  border-top: 0.1rem solid $border-color;
+  border-top: $border-width solid $border-color;
 }
