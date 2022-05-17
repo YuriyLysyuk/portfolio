@@ -66,3 +66,12 @@ $breakpoints: (
   xl: 1200px,
   xxl: 1400px,
 );
+$mobile-menu-breakpoint: lg;
+
+/**
+ * CSS variables
+ */
+
+:root {
+  --main-node-height: auto;
+}

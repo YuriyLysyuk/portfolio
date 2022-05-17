@@ -9,14 +9,14 @@
   <body>
     <div class="container">
       <header class="header">
-        <nav class="nav">
-          <a href="#" class="nav__item nav__item_type_logo">юрий-лысюк</a>
-          <a href="#" class="nav__item nav__item_type_link">привет</a>
-          <a href="#" class="nav__item nav__item_type_link">обо мне</a>
-          <a href="#" class="nav__item nav__item_type_link">проекты</a>
-          <a href="#" class="nav__item nav__item_type_link nav__item_push_right"
-            >контакты</a
-          >
+        <nav class="navbar">
+          <a href="#" class="navbar__logo">юрий-лысюк</a>
+          <div class="navbar__nav nav">
+            <a href="#" class="nav__link">привет</a>
+            <a href="#" class="nav__link">обо мне</a>
+            <a href="#" class="nav__link">проекты</a>
+            <a href="#" class="nav__link nav__link_push_right">контакты</a>
+          </div>
         </nav>
       </header>
 
@@ -24,29 +24,32 @@
       </main>
 
       <footer class="footer">
-        <nav class="nav">
-          <div class="nav__item nav__item_type_text">найдите меня в:</div>
-          <a
-            href="https://t.me/lysyuk_y"
-            target="_blank"
-            class="nav__item nav__item_type_social"
-          >
-            <i class="fa-brands fa-telegram"></i>
-          </a>
-          <a
-            href="https://vk.com/lysyuk_y"
-            target="_blank"
-            class="nav__item nav__item_type_social"
-          >
-            <i class="fa-brands fa-vk"></i>
-          </a>
-          <a
-            href="https://github.com/lysyuk"
-            target="_blank"
-            class="nav__item nav__item_type_link nav__item_with_icon nav__item_push_right"
-            >@lysyuk
-            <i class="fa-brands fa-github"></i>
-          </a>
+        <nav class="navbar">
+          <div class="navbar__text">найдите меня в:</div>
+          <div class="navbar__nav nav">
+            <a
+              href="https://t.me/lysyuk_y"
+              target="_blank"
+              class="nav__link nav__link_type_social"
+            >
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a
+              href="https://vk.com/lysyuk_y"
+              target="_blank"
+              class="nav__link nav__link_type_social"
+            >
+              <i class="fa-brands fa-vk"></i>
+            </a>
+            <a
+              href="https://github.com/lysyuk"
+              target="_blank"
+              class="nav__link nav__link_type_social nav__link_push_right"
+            >
+              <span>@lysyuk</span>
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
         </nav>
       </footer>
     </div>
