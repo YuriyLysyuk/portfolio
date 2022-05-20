@@ -11,20 +11,38 @@
       <header class="header">
         <nav class="navbar">
           <a class="navbar__logo" href="/">юрий-лысюк</a>
-          <input class="menu-toggle" id="menu-toggle" type="checkbox" />
+          <input
+            class="js-menu-toggle menu-toggle"
+            id="menu-toggle"
+            type="checkbox"
+          />
           <label class="hamburger" for="menu-toggle">
             <span class="hamburger__line"></span>
           </label>
-          <div class="navbar__nav navbar__nav_collapse nav">
-            <a class="nav__link" href="#">привет</a>
-            <a class="nav__link" href="#">обо мне</a>
-            <a class="nav__link" href="#">проекты</a>
-            <a class="nav__link nav__link_push_right" href="#">контакты</a>
+          <div class="js-header-nav navbar__nav navbar__nav_collapse nav">
+            <a class="nav__link" href="#hello">привет</a>
+            <a class="nav__link" href="#about">обо мне</a>
+            <a class="nav__link" href="#projects">проекты</a>
+            <a class="nav__link nav__link_push_right" href="#contacts">
+              контакты
+            </a>
           </div>
         </nav>
       </header>
 
       <main class="js-main main">
+        <section class="js-section hello" id="hello">
+          <h2>Привет</h2>
+        </section>
+        <section class="js-section about" id="about">
+          <h2>Обо мне</h2>
+        </section>
+        <section class="js-section projects" id="projects">
+          <h2>Проекты</h2>
+        </section>
+        <section class="js-section contacts" id="contacts">
+          <h2>Контакты</h2>
+        </section>
       </main>
 
       <footer class="footer">
