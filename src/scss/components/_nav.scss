@@ -160,7 +160,7 @@
     }
 
     &::before {
-      content: '>_';
+      content: '_';
 
       .footer & {
         content: none;
