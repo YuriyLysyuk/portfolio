@@ -142,11 +142,9 @@
     }
 
     .navbar__nav_collapse & {
-      color: $white;
       border-bottom: $border-width solid $border-color;
 
       @include media('>=#{$mobile-menu-breakpoint}') {
-        color: $menu-color;
         border-right: $border-width solid $border-color;
         border-bottom: none;
 
@@ -162,7 +160,7 @@
     }
 
     &::before {
-      content: '>_';
+      content: '_';
 
       .footer & {
         content: none;
@@ -184,7 +182,8 @@
 
     &:hover,
     &:focus,
-    &:active {
+    &:active,
+    &_active {
       color: $white;
 
       &::after {

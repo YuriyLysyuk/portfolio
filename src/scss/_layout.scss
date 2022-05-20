@@ -22,8 +22,13 @@
 
 .main {
   flex-grow: 2;
+  scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: scroll;
+
+  & > section {
+    min-height: var(--main-node-height);
+  }
 }
 
 .header {
