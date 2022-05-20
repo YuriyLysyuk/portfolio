@@ -27,6 +27,8 @@ setTimeout(() => {
 
 initialScroll();
 
+observeActiveSection();
+
 // Helpers
 
 function onWindowResize() {
@@ -59,3 +61,30 @@ function initialScroll() {
   }
 }
 
+function observeActiveSection() {
+  const observerOptions = {
+    root: mainNode,
+    rootMargin: '-49.99% 0px',
+    threshold: 0,
+  };
+
+  const observerCallback = function (entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+
+        Object.values(navMap).forEach(({ link }) => {
+          link.classList.remove('nav__link_active');
+        });
+
+        navMap[id].link.classList.add('nav__link_active');
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  sectionNodes.forEach((sectionNode) => {
+    observer.observe(sectionNode);
+  });
+}

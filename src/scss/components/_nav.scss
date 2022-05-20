@@ -182,7 +182,8 @@
 
     &:hover,
     &:focus,
-    &:active {
+    &:active,
+    &_active {
       color: $white;
 
       &::after {
