@@ -20,7 +20,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: '[name].[hash].bundle.js',
+    filename: '[contenthash].bundle.js',
     clean: true,
     assetModuleFilename: 'assets/[contenthash][ext][query]',
   },
@@ -31,7 +31,7 @@ module.exports = {
       inject: 'body',
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].bundle.css',
+      filename: '[contenthash].bundle.css',
     }),
   ],
 
