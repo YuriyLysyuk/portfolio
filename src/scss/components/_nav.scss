@@ -303,5 +303,6 @@
   &:checked ~ .navbar__nav_collapse {
     width: 100%;
     opacity: 1;
+    z-index: 1;
   }
 }
