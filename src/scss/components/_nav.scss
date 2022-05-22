@@ -47,12 +47,13 @@
 
   &__logo,
   &__text {
-    padding: 1.7rem;
+    padding: 1.7rem $side-padding-mobile;
     color: $menu-color;
     white-space: nowrap;
 
     @include media('>=sm') {
-      padding: 1.7rem 3.2rem;
+      padding-left: $side-padding-pc;
+      padding-right: $side-padding-pc;
     }
 
     .footer & {
@@ -120,13 +121,14 @@
   &__link {
     position: relative;
     display: flex;
-    padding: 1.7rem;
+    padding: 1.7rem $side-padding-mobile;
     color: $menu-color;
     white-space: nowrap;
     border-right: $border-width solid $border-color;
 
     @include media('>=sm') {
-      padding: 1.7rem 3.2rem;
+      padding-left: $side-padding-pc;
+      padding-right: $side-padding-pc;
     }
 
     &:last-child {
@@ -203,8 +205,8 @@
 
       &:last-child {
         @include media('>=#{$mobile-menu-breakpoint}') {
-          padding-left: 3.2rem;
-          padding-right: 3.2rem;
+          padding-left: $side-padding-pc;
+          padding-right: $side-padding-pc;
         }
       }
 
@@ -245,9 +247,14 @@
   display: flex;
   align-items: center;
   margin-left: auto;
-  padding: 1.7rem;
+  padding: 1.7rem $side-padding-mobile;
   line-height: 1;
   cursor: pointer;
+
+  @include media('>=sm') {
+    padding-left: $side-padding-pc;
+    padding-right: $side-padding-pc;
+  }
 
   @include media('>=#{$mobile-menu-breakpoint}') {
     display: none;
