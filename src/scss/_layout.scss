@@ -21,10 +21,11 @@
 }
 
 .main {
-  flex-grow: 2;
+  flex-grow: 1;
   scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: scroll;
+  z-index: 0;
 
   & > .section {
     height: 100%;
