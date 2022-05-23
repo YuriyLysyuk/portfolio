@@ -20,8 +20,9 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: '[name].[hash].bundle.js',
+    filename: '[contenthash].bundle.js',
     clean: true,
+    assetModuleFilename: 'assets/[contenthash][ext][query]',
   },
 
   plugins: [
@@ -30,7 +31,7 @@ module.exports = {
       inject: 'body',
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].bundle.css',
+      filename: '[contenthash].bundle.css',
     }),
   ],
 
@@ -43,10 +44,11 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
-        generator: {
-          filename: 'fonts/[hash][ext][query]',
-          outputPath: 'fonts/',
-        },
+      },
+      {
+        test: /\.svg$/i,
+        type: 'asset',
+        use: 'svgo-loader',
       },
     ],
   },

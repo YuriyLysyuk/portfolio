@@ -21,13 +21,21 @@
 }
 
 .main {
-  flex-grow: 2;
+  flex-grow: 1;
   scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: scroll;
+  z-index: 0;
 
-  & > section {
+  & > .section {
+    height: 100%;
     min-height: var(--main-node-height);
+    padding: 1.7rem $side-padding-mobile;
+
+    @include media('>=sm') {
+      padding-left: $side-padding-pc;
+      padding-right: $side-padding-pc;
+    }
   }
 }
 
