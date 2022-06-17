@@ -1,0 +1,40 @@
+/**
+ * Code
+ */
+
+.code,
+code {
+  font-family: $code-font;
+  font-weight: $code-font-weight;
+
+  &.hljs {
+    pre & {
+      padding-top: 0;
+      padding-bottom: 0;
+      border: 1px solid #1e2d3d;
+      border-radius: 15px;
+      background: #011221;
+    }
+
+    & a {
+      position: relative;
+      color: inherit;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: -0.2rem;
+        border-bottom-width: 0.1rem;
+        border-bottom-style: solid;
+        border-bottom-color: transparent;
+      }
+
+      &:hover::after {
+        border-bottom-color: unset;
+      }
+    }
+  }
+}

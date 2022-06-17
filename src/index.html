@@ -45,6 +45,21 @@
         </section>
         <section class="js-section section" id="about">
           <h2>Обо мне</h2>
+          <pre>
+            <code class="js-code">
+/**
+* Count characters in your string
+* @link https://www.codewars.com/kata/52efefcbcdf57161d4000091/
+*/
+
+function count(string) {
+  return [...string].reduce(
+    (obj, char) => ((obj[char] = (obj[char] || 0) + 1), obj),
+    {}
+  );
+}
+            </code>
+          </pre>
         </section>
         <section class="js-section section" id="projects">
           <h2>Проекты</h2>

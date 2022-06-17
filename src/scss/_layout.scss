@@ -28,7 +28,7 @@
   z-index: 0;
 
   & > .section {
-    height: 100%;
+    height: auto;
     min-height: var(--main-node-height);
     padding: 1.7rem $side-padding-mobile;
 
