@@ -16,7 +16,7 @@ codeNodes.forEach((codeNode) => {
 
 function replaceToActiveLink(innerHTML) {
   return innerHTML.replace(
-    /(https?:\/\/[\w./]+)/gi,
+    /(https?:\/\/[\w-_./]+)/gi,
     '<a href="$1" target="_blank">$1</a>'
   );
 }
