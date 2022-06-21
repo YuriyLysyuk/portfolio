@@ -18,7 +18,7 @@
   &__logo {
     justify-content: flex-start;
     width: 100%;
-    max-width: 24.2rem;
+    max-width: $sidebar-width;
 
     @include media('>=#{$mobile-menu-breakpoint}') {
       border-right: $border-width solid $border-color;
