@@ -30,11 +30,9 @@
   & > .section {
     height: auto;
     min-height: var(--main-node-height);
-    padding: 1.7rem $side-padding-mobile;
 
-    @include media('>=sm') {
-      padding-left: $side-padding-pc;
-      padding-right: $side-padding-pc;
+    &_wide {
+      @extend %block-padding;
     }
   }
 }

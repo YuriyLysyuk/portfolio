@@ -5,3 +5,12 @@
 %transition {
   transition: all 0.3s ease-out;
 }
+
+%block-padding {
+  padding: 1.7rem $side-padding-mobile;
+
+  @include media('>=sm') {
+    padding-left: $side-padding-pc;
+    padding-right: $side-padding-pc;
+  }
+}
