@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   gap: $gap;
+  min-height: var(--main-node-height);
   color: #e5e9f0;
 
   &::before {

@@ -30,7 +30,6 @@
   & > .section {
     display: flex;
     height: auto;
-    min-height: var(--main-node-height);
 
     &:not(:last-child) {
       border-bottom: $border-width solid $border-color;
