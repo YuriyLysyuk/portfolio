@@ -43,17 +43,71 @@
             const githubLink = 'https://github.com/YuriyLysyuk';
           </p>
         </section>
+
         <section class="js-section section" id="about">
-          <h2>Обо мне</h2>
+          <aside class="sidebar">
+            <h2>Обо мне</h2>
+          </aside>
+          <div class="column">
+            <div class="tabs">
+              <input id="tab1" name="tabs" type="radio" />
+              <label class="tab__header" for="tab1">
+                <span>
+                  about.html
+                  <span class="tab__close">&#10005;</span>
+                </span>
+              </label>
+              <div class="tab__content">
                 <%= require('html-loader!./partials/about.html').default %>
+              </div>
+              <input id="tab2" name="tabs" type="radio" />
+              <label class="tab__header" for="tab2">
+                <span>
+                  skills.html
+                  <span class="tab__close">&#10005;</span>
+                </span>
+              </label>
+              <div class="tab__content">
                 <%= require('html-loader!./partials/skills.html').default %>
+              </div>
+              <input id="tab3" name="tabs" type="radio" checked />
+              <label class="tab__header" for="tab3">
+                <span>
+                  experience.html
+                  <span class="tab__close">&#10005;</span>
+                </span>
+              </label>
+              <div class="tab__content">
                 <%= require('html-loader!./partials/experience.html').default %>
+              </div>
+              <input id="tab4" name="tabs" type="radio" />
+              <label class="tab__header" for="tab4">
+                <span>
+                  education.html
+                  <span class="tab__close">&#10005;</span>
+                </span>
+              </label>
+              <div class="tab__content">
                 <%= require('html-loader!./partials/education.html').default %>
+              </div>
+              <input id="tab5" name="tabs" type="radio" />
+              <label class="tab__header" for="tab5">
+                <span>
+                  code-ex-1.html
+                  <span class="tab__close">&#10005;</span>
+                </span>
+              </label>
+              <div class="tab__content">
                 <%= require('html-loader!./partials/code-ex-1.html').default %>
+              </div>
+            </div>
+          </div>
         </section>
+
         <section class="js-section section" id="projects">
           <h2>Проекты</h2>
         </section>
+
         <section class="js-section section" id="contacts">
           <h2>Контакты</h2>
         </section>
