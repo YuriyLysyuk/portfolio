@@ -1,0 +1,114 @@
+/**
+ * Tabs
+ */
+
+.tabs {
+  --tabs-count: 1;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  input[type='radio'] {
+    position: absolute;
+    top: 0;
+    left: -999rem;
+  }
+}
+
+.tab {
+  &__header {
+    position: relative;
+    display: block;
+    width: calc(100% / var(--tabs-count));
+    max-width: fit-content;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: $menu-color;
+    background-color: $layout-bg-color;
+    border-right: $border-width solid $border-color;
+    cursor: pointer;
+    order: 1;
+
+    & > span {
+      position: relative;
+      display: block;
+      padding: 1rem 4.1rem 1rem 1.4rem;
+      background-color: inherit;
+      white-space: nowrap;
+      overflow: hidden;
+      @extend %transition;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    &:hover .tab__close {
+      opacity: 1;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+    background-color: inherit;
+    opacity: 0;
+    z-index: 1;
+    @extend %transition;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 2.2rem;
+      height: 2.2rem;
+      background-color: transparent;
+      border-radius: .3rem;
+      z-index: -1;
+      @extend %transition;
+    }
+
+    &:hover:before {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &__content {
+    display: none;
+    width: 100%;
+    border-top: $border-width solid $border-color;
+    order: 2;
+
+    pre code.hljs {
+      border: 0;
+      border-radius: 0;
+    }
+  }
+}
+
+[id^='tab']:checked + [class^='tab__header'] {
+  position: relative;
+  color: $text-color;
+  background-color: $code-bg-color;
+}
+
+[id^='tab']:checked + [class^='tab__header']:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -$border-width;
+  width: 100%;
+  border-bottom: $border-width solid $code-bg-color;
+}
+
+[id^='tab']:checked + [class^='tab__header'] + [class^='tab__content'] {
+  display: block;
+}
