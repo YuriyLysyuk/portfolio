@@ -25,13 +25,14 @@ $line-height: 2.4rem;
 /**
  * Pallete
  */
+$green: #43d9ad;
+$blue: #4d5bce;
+$orange: #fea55f;
 
 /**
  * Basic Colors
  */
 
-$blue: #00f;
-$red: #f00;
 $white: #fff;
 $black: #000;
 $gray: #ccc;
@@ -46,9 +47,8 @@ $text-color: #e5e9f0;
 $inverted-text-color: $black;
 $code-bg-color: #011221;
 $menu-color: #607b96;
-$social-color: #607b96;
-$social-hover-color: #607b96;
-$accent-color: #fea55f;
+$menu-hover-color: $text-color;
+$accent-color: $orange;
 $border-color: #1e2d3d;
 
 /**
@@ -56,7 +56,8 @@ $border-color: #1e2d3d;
  */
 
 $gap: 1rem;
-$border-width: .1rem;
+$border-width: 0.1rem;
+$border-radius: 0.8rem;
 $side-padding-mobile: 1.7rem;
 $side-padding-pc: 3.2rem;
 $sidebar-width: 24.2rem;

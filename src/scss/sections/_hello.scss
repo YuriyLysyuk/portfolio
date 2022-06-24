@@ -8,10 +8,9 @@
   flex-direction: column;
   justify-content: center;
   gap: $gap;
-  min-height: var(--main-node-height);
-  color: #e5e9f0;
+  min-height: calc(var(--main-node-height) + $border-width);
 
-  &::before {
+  &:before {
     content: '';
     position: absolute;
     top: 0;
@@ -36,15 +35,15 @@
   &__desc {
     font-size: 2rem;
     line-height: 2.6rem;
-    color: #43d9ad;
+    color: $green;
 
     @include media('>=sm') {
       font-size: 3.2rem;
       line-height: 4.2rem;
-      color: #4d5bce;
+      color: $blue;
     }
 
-    &::before {
+    &:before {
       content: '> ';
     }
   }

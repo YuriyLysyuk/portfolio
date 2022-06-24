@@ -27,7 +27,7 @@
     &:hover,
     &:focus,
     &:active {
-      color: $white;
+      color: $menu-hover-color;
     }
   }
 
@@ -47,14 +47,9 @@
 
   &__logo,
   &__text {
-    padding: 1.7rem $side-padding-mobile;
+    @extend %block-padding;
     color: $menu-color;
     white-space: nowrap;
-
-    @include media('>=sm') {
-      padding-left: $side-padding-pc;
-      padding-right: $side-padding-pc;
-    }
 
     .footer & {
       padding-top: 1.4rem;
@@ -97,14 +92,13 @@
       flex-direction: column;
       justify-content: flex-start;
       width: 0;
-      height: var(--main-node-height);
+      height: calc(var(--main-node-height) + $border-width);
       background-color: $layout-bg-color;
       opacity: 0;
       @extend %transition;
 
       @include media('>=#{$mobile-menu-breakpoint}') {
         position: unset;
-        // top: 0;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -121,15 +115,10 @@
   &__link {
     position: relative;
     display: flex;
-    padding: 1.7rem $side-padding-mobile;
+    @extend %block-padding;
     color: $menu-color;
     white-space: nowrap;
     border-right: $border-width solid $border-color;
-
-    @include media('>=sm') {
-      padding-left: $side-padding-pc;
-      padding-right: $side-padding-pc;
-    }
 
     &:last-child {
       border-right: none;
@@ -161,7 +150,7 @@
       padding-bottom: 1.4rem;
     }
 
-    &::before {
+    &:before {
       content: '_';
 
       .footer & {
@@ -169,7 +158,7 @@
       }
     }
 
-    &::after {
+    &:after {
       content: '';
       position: absolute;
       top: 0;
@@ -178,17 +167,17 @@
       left: 0;
       width: 100%;
       height: 100%;
-      border-top: .3rem solid transparent;
-      border-bottom: .3rem solid transparent;
+      border-top: 0.3rem solid transparent;
+      border-bottom: 0.3rem solid transparent;
     }
 
     &:hover,
     &:focus,
     &:active,
     &_active {
-      color: $white;
+      color: $menu-hover-color;
 
-      &::after {
+      &:after {
         border-top-color: transparent;
         border-bottom-color: $accent-color;
 
@@ -211,12 +200,14 @@
       }
 
       & > .svg-inline--fa {
-        color: $social-color;
-        opacity: .4;
+        width: 2.4rem;
+        height: 2.4rem;
+        color: $menu-color;
+        opacity: 0.4;
       }
 
       &:hover > .svg-inline--fa {
-        color: $social-hover-color;
+        color: $menu-hover-color;
         opacity: 1;
       }
 
@@ -247,14 +238,9 @@
   display: flex;
   align-items: center;
   margin-left: auto;
-  padding: 1.7rem $side-padding-mobile;
+  @extend %block-padding;
   line-height: 1;
   cursor: pointer;
-
-  @include media('>=sm') {
-    padding-left: $side-padding-pc;
-    padding-right: $side-padding-pc;
-  }
 
   @include media('>=#{$mobile-menu-breakpoint}') {
     display: none;
@@ -263,11 +249,11 @@
   &__line {
     position: relative;
     width: 1.8rem;
-    height: .2rem;
+    height: 0.2rem;
     background-color: $menu-color;
 
-    &::before,
-    &::after {
+    &:before,
+    &:after {
       content: '';
       position: absolute;
       width: 100%;
@@ -276,25 +262,25 @@
       @extend %transition;
     }
 
-    &::before {
-      top: -.7rem;
+    &:before {
+      top: -0.7rem;
     }
 
-    &::after {
-      top: .7rem;
+    &:after {
+      top: 0.7rem;
     }
 
     .menu-toggle:checked ~ .hamburger & {
       background-color: transparent;
 
-      &::before {
+      &:before {
         top: 0;
         width: 110%;
         height: 110%;
         transform: rotate(135deg);
       }
 
-      &::after {
+      &:after {
         top: 0;
         width: 110%;
         height: 110%;

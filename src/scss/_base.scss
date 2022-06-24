@@ -68,7 +68,7 @@ a {
     outline: 0;
   }
 
-  &::after {
+  &:after {
     @extend %transition;
   }
 }
