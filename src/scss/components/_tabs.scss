@@ -40,6 +40,10 @@
 
       &:hover {
         color: $menu-hover-color;
+
+        & > .svg-inline--fa {
+          color: $accent-color;
+        }
       }
     }
 
@@ -103,6 +107,10 @@
   position: relative;
   color: $text-color;
   background-color: $code-bg-color;
+
+  & > span > .svg-inline--fa {
+    color: $accent-color;
+  }
 }
 
 [id^='tab']:checked + [class^='tab__header']:before {
