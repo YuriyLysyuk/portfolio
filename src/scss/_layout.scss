@@ -48,3 +48,18 @@
 .footer {
   border-top: $border-width solid $border-color;
 }
+
+.sidebar {
+  width: 100%;
+  max-width: $sidebar-width;
+  @extend %block-padding;
+
+  @include media('>=#{$mobile-menu-breakpoint}') {
+    border-right: $border-width solid $border-color;
+  }
+}
+
+.column {
+  width: 100%;
+  overflow-x: scroll;
+}
