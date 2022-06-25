@@ -52,7 +52,7 @@
 .sidebar {
   width: 100%;
   max-width: $sidebar-width;
-  @extend %block-padding;
+  // @extend %block-padding;
 
   @include media('>=#{$mobile-menu-breakpoint}') {
     border-right: $border-width solid $border-color;
