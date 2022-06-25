@@ -14,3 +14,9 @@
     padding-right: $side-padding-pc;
   }
 }
+
+%hidden {
+  position: absolute;
+  top: 0;
+  left: -999rem;
+}
