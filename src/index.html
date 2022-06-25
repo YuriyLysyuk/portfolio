@@ -50,10 +50,10 @@
           </aside>
           <div class="column">
             <div class="tabs">
-              <input id="tab1" name="tabs" type="radio" />
-              <label class="tab__header" for="tab1">
+              <input id="tab1" name="tabs" type="radio" checked />
+              <label class="file tab__header" for="tab1">
                 <span>
-                  <i class="fa-solid fa-code"></i>
+                  <i class="file__icon fa-solid fa-code"></i>
                   about.html
                   <span class="tab__close">
                     <i class="fa-solid fa-xmark"></i>
@@ -64,9 +64,9 @@
                 <%= require('html-loader!./partials/about.html').default %>
               </div>
               <input id="tab2" name="tabs" type="radio" />
-              <label class="tab__header" for="tab2">
+              <label class="file tab__header" for="tab2">
                 <span>
-                  <i class="fa-solid fa-code"></i>
+                  <i class="file__icon fa-solid fa-code"></i>
                   skills.js
                   <span class="tab__close">
                     <i class="fa-solid fa-xmark"></i>
@@ -76,10 +76,10 @@
               <div class="tab__content">
                 <%= require('html-loader!./partials/skills.html').default %>
               </div>
-              <input id="tab3" name="tabs" type="radio" checked />
-              <label class="tab__header" for="tab3">
+              <input id="tab3" name="tabs" type="radio" />
+              <label class="file tab__header" for="tab3">
                 <span>
-                  <i class="fa-solid fa-code"></i>
+                  <i class="file__icon fa-solid fa-code"></i>
                   experience.js
                   <span class="tab__close">
                     <i class="fa-solid fa-xmark"></i>
@@ -90,9 +90,9 @@
                 <%= require('html-loader!./partials/experience.html').default %>
               </div>
               <input id="tab4" name="tabs" type="radio" />
-              <label class="tab__header" for="tab4">
+              <label class="file tab__header" for="tab4">
                 <span>
-                  <i class="fa-solid fa-code"></i>
+                  <i class="file__icon fa-solid fa-code"></i>
                   education.js
                   <span class="tab__close">
                     <i class="fa-solid fa-xmark"></i>
@@ -103,9 +103,9 @@
                 <%= require('html-loader!./partials/education.html').default %>
               </div>
               <input id="tab5" name="tabs" type="radio" />
-              <label class="tab__header" for="tab5">
+              <label class="file tab__header" for="tab5">
                 <span>
-                  <i class="fa-solid fa-code"></i>
+                  <i class="file__icon fa-solid fa-code"></i>
                   code-ex-1.js
                   <span class="tab__close">
                     <i class="fa-solid fa-xmark"></i>

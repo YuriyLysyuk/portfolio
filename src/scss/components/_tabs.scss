@@ -17,34 +17,12 @@
 
 .tab {
   &__header {
-    position: relative;
-    display: block;
     width: calc(100% / var(--tabs-count));
-    max-width: fit-content;
-    font-size: 1.6rem;
-    line-height: 2.1rem;
-    color: $menu-color;
-    background-color: $layout-bg-color;
     border-right: $border-width solid $border-color;
-    cursor: pointer;
     order: 1;
 
     & > span {
-      position: relative;
-      display: block;
       padding: 1rem 4.1rem 1rem 1.4rem;
-      background-color: inherit;
-      white-space: nowrap;
-      overflow: hidden;
-      @extend %transition;
-
-      &:hover {
-        color: $menu-hover-color;
-
-        & > .svg-inline--fa {
-          color: $accent-color;
-        }
-      }
     }
 
     &:hover .tab__close {
@@ -103,17 +81,12 @@
   }
 }
 
-[id^='tab']:checked + [class^='tab__header'] {
-  position: relative;
-  color: $text-color;
+[id^='tab']:checked + [class~='tab__header'] {
   background-color: $code-bg-color;
-
-  & > span > .svg-inline--fa {
-    color: $accent-color;
-  }
+  @extend %file-active;
 }
 
-[id^='tab']:checked + [class^='tab__header']:before {
+[id^='tab']:checked + [class~='tab__header']:before {
   content: '';
   position: absolute;
   left: 0;
@@ -122,6 +95,6 @@
   border-bottom: $border-width solid $code-bg-color;
 }
 
-[id^='tab']:checked + [class^='tab__header'] + [class^='tab__content'] {
+[id^='tab']:checked + [class~='tab__header'] + [class^='tab__content'] {
   display: block;
 }
