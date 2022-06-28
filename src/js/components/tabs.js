@@ -43,6 +43,9 @@ function renderTab(tabId, action) {
     case 'open':
       openTab(tabId);
       break;
+    case 'close':
+      closeTab(tabId);
+      break;
   }
 }
 
@@ -54,6 +57,8 @@ function openTab(tabId) {
     openedTabs.sort();
   }
 
+  console.log(openedTabs);
+
   for (let id in tabs) {
     if (tabId === id) {
       tabs[id].menuLabel.classList.add('file_active');
@@ -64,6 +69,16 @@ function openTab(tabId) {
 
     tabs[id].menuLabel.classList.remove('file_active');
   }
+}
+
+function closeTab(tabId) {
+  openedTabs = openedTabs.filter((id) => id !== tabId);
+
+  if (!isActiveTab(tabId)) {
+    tabs[tabId].label.classList.remove('tab_opened');
+  }
+
+  console.log(openedTabs);
 }
 
 function isActiveTab(tabId) {
