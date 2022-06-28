@@ -15,6 +15,7 @@
 
 .tab {
   &__header {
+    display: none;
     width: calc(100% / var(--tabs-count));
     border-right: $border-width solid $border-color;
     order: 1;
@@ -67,6 +68,10 @@
       border-radius: 0;
     }
   }
+
+  &_opened {
+    display: block;
+  }
 }
 
 [id^='tab']:checked + [class~='tab__header'] {
@@ -83,6 +88,6 @@
   border-bottom: $border-width solid $code-bg-color;
 }
 
-[id^='tab']:checked + [class~='tab__header'] + [class^='tab__content'] {
+[id^='tab']:checked + [class~='tab__header'] + [class~='tab__content'] {
   display: block;
 }

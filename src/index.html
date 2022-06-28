@@ -58,32 +58,57 @@
                 <i class="fa-solid fa-caret-right"></i>
                 Обо мне
               </label>
-              <div class="side-menu__list">
-                <label class="file file_active side-menu__item" for="tab1">
+              <div class="js-tabs-menu side-menu__list">
+                <label
+                  class="file file_active"
+                  data-tab-id="tab1"
+                  data-tab-action="open"
+                  for="tab1"
+                >
                   <span>
                     <i class="file__icon fa-solid fa-code"></i>
                     about.js
                   </span>
                 </label>
-                <label class="file side-menu__item" for="tab2">
+                <label
+                  class="file"
+                  data-tab-id="tab2"
+                  data-tab-action="open"
+                  for="tab2"
+                >
                   <span>
                     <i class="file__icon fa-solid fa-code"></i>
                     skills.js
                   </span>
                 </label>
-                <label class="file side-menu__item" for="tab3">
+                <label
+                  class="file"
+                  data-tab-id="tab3"
+                  data-tab-action="open"
+                  for="tab3"
+                >
                   <span>
                     <i class="file__icon fa-solid fa-code"></i>
                     experience.js
                   </span>
                 </label>
-                <label class="file side-menu__item" for="tab4">
+                <label
+                  class="file"
+                  data-tab-id="tab4"
+                  data-tab-action="open"
+                  for="tab4"
+                >
                   <span>
                     <i class="file__icon fa-solid fa-code"></i>
                     education.js
                   </span>
                 </label>
-                <label class="file side-menu__item" for="tab5">
+                <label
+                  class="file"
+                  data-tab-id="tab5"
+                  data-tab-action="open"
+                  for="tab5"
+                >
                   <span>
                     <i class="file__icon fa-solid fa-code"></i>
                     code-ex-1.js
@@ -122,9 +147,14 @@
             </div>
           </aside>
           <div class="column">
-            <div class="tabs">
+            <div class="js-tabs tabs">
               <input id="tab1" name="tabs" type="radio" checked />
-              <label class="file tab__header" for="tab1">
+              <label
+                class="file tab__header tab_opened"
+                data-tab-id="tab1"
+                data-tab-action="open"
+                for="tab1"
+              >
                 <span>
                   <i class="file__icon fa-solid fa-code"></i>
                   about.html
@@ -137,7 +167,12 @@
                 <%= require('html-loader!./partials/about.html').default %>
               </div>
               <input id="tab2" name="tabs" type="radio" />
-              <label class="file tab__header" for="tab2">
+              <label
+                class="file tab__header"
+                data-tab-id="tab2"
+                data-tab-action="open"
+                for="tab2"
+              >
                 <span>
                   <i class="file__icon fa-solid fa-code"></i>
                   skills.js
@@ -150,7 +185,12 @@
                 <%= require('html-loader!./partials/skills.html').default %>
               </div>
               <input id="tab3" name="tabs" type="radio" />
-              <label class="file tab__header" for="tab3">
+              <label
+                class="file tab__header"
+                data-tab-id="tab3"
+                data-tab-action="open"
+                for="tab3"
+              >
                 <span>
                   <i class="file__icon fa-solid fa-code"></i>
                   experience.js
@@ -163,7 +203,12 @@
                 <%= require('html-loader!./partials/experience.html').default %>
               </div>
               <input id="tab4" name="tabs" type="radio" />
-              <label class="file tab__header" for="tab4">
+              <label
+                class="file tab__header"
+                data-tab-id="tab4"
+                data-tab-action="open"
+                for="tab4"
+              >
                 <span>
                   <i class="file__icon fa-solid fa-code"></i>
                   education.js
@@ -176,7 +221,12 @@
                 <%= require('html-loader!./partials/education.html').default %>
               </div>
               <input id="tab5" name="tabs" type="radio" />
-              <label class="file tab__header" for="tab5">
+              <label
+                class="file tab__header"
+                data-tab-id="tab5"
+                data-tab-action="open"
+                for="tab5"
+              >
                 <span>
                   <i class="file__icon fa-solid fa-code"></i>
                   code-ex-1.js
