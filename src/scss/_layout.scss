@@ -29,6 +29,7 @@
 
   & > .section {
     display: flex;
+    flex-direction: column;
     height: auto;
 
     &:not(:last-child) {
@@ -37,6 +38,12 @@
 
     &_wide {
       @extend %block-padding;
+    }
+
+    &_2col {
+      @include media('>=#{$mobile-menu-breakpoint}') {
+        flex-direction: row;
+      }
     }
   }
 }
@@ -51,10 +58,9 @@
 
 .sidebar {
   width: 100%;
-  max-width: $sidebar-width;
-  // @extend %block-padding;
 
   @include media('>=#{$mobile-menu-breakpoint}') {
+    max-width: $sidebar-width;
     border-right: $border-width solid $border-color;
   }
 }

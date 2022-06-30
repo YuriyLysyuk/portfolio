@@ -24,11 +24,15 @@
   & > span {
     position: relative;
     display: block;
-    padding: 1rem;
+    padding: 0.8rem;
     background-color: inherit;
     white-space: nowrap;
     overflow: hidden;
     @extend %transition;
+
+    @include media('>=#{$mobile-menu-breakpoint}') {
+      padding: 1rem;
+    }
 
     &:hover {
       @extend %file-active;

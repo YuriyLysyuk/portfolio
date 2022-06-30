@@ -70,7 +70,11 @@
   }
 
   &_opened {
-    display: block;
+    display: none;
+
+    @include media('>=#{$mobile-menu-breakpoint}') {
+      display: block;
+    }
   }
 }
 
