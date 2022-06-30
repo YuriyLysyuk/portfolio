@@ -23,14 +23,14 @@ tabsMenuNode.addEventListener('click', onTabsClick);
 tabsNode.addEventListener('click', onTabsClick);
 
 function onTabsClick(event) {
-  event.preventDefault();
-
   const target = event.target;
   const actionNode = target.dataset.tabAction
     ? target
     : target.closest('[data-tab-action]');
 
   if (!actionNode) return;
+
+  event.preventDefault();
 
   const tabId = actionNode.dataset.tabId;
   const action = actionNode.dataset.tabAction;
