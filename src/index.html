@@ -46,7 +46,7 @@
 
         <section class="js-section section" id="about">
           <h2 class="text_hidden">Обо мне</h2>
-          <aside class="sidebar">
+          <aside class="js-tabs-menu sidebar">
             <div class="side-menu">
               <input
                 class="side-menu__toggle"
@@ -58,7 +58,7 @@
                 <i class="fa-solid fa-caret-right"></i>
                 Обо мне
               </label>
-              <div class="js-tabs-menu side-menu__list">
+              <div class="side-menu__list">
                 <label
                   class="file file_active"
                   data-tab-id="tab1"
@@ -103,6 +103,20 @@
                     education.js
                   </span>
                 </label>
+              </div>
+            </div>
+            <div class="side-menu">
+              <input
+                class="side-menu__toggle"
+                id="toggle-about"
+                type="checkbox"
+                checked
+              />
+              <label class="side-menu__title" for="toggle-about">
+                <i class="fa-solid fa-caret-right"></i>
+                Примеры кода
+              </label>
+              <div class="side-menu__list">
                 <label
                   class="file"
                   data-tab-id="tab5"
