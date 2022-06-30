@@ -57,8 +57,6 @@ function openTab(tabId) {
     openedTabs.sort();
   }
 
-  console.log(openedTabs);
-
   for (let id in tabs) {
     if (tabId === id) {
       tabs[id].menuLabel.classList.add('file_active');
@@ -72,13 +70,14 @@ function openTab(tabId) {
 }
 
 function closeTab(tabId) {
+  const nearestTab = openedTabs[openedTabs.indexOf(tabId) - 1];
+
+  tabs[tabId].label.classList.remove('tab_opened');
   openedTabs = openedTabs.filter((id) => id !== tabId);
 
-  if (!isActiveTab(tabId)) {
-    tabs[tabId].label.classList.remove('tab_opened');
+  if (isActiveTab(tabId)) {
+    openTab(nearestTab);
   }
-
-  console.log(openedTabs);
 }
 
 function isActiveTab(tabId) {
