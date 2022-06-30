@@ -55,6 +55,7 @@ function openTab(tabId) {
   if (!~openedTabs.indexOf(tabId)) {
     openedTabs.push(tabId);
     openedTabs.sort();
+    setOpenTabsCountCSSVar(openedTabs.length);
   }
 
   for (let id in tabs) {
@@ -74,6 +75,7 @@ function closeTab(tabId) {
 
   tabs[tabId].label.classList.remove('tab_opened');
   openedTabs = openedTabs.filter((id) => id !== tabId);
+  setOpenTabsCountCSSVar(openedTabs.length);
 
   if (isActiveTab(tabId)) {
     openTab(nearestTab);
@@ -82,4 +84,8 @@ function closeTab(tabId) {
 
 function isActiveTab(tabId) {
   return tabs[tabId].menuLabel.classList.contains('file_active');
+}
+
+function setOpenTabsCountCSSVar(count = 1) {
+  tabsNode.style.setProperty('--open-tabs-count', count);
 }
