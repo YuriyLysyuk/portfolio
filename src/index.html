@@ -138,6 +138,17 @@
                     duplicate-count.js
                   </span>
                 </label>
+                <label
+                  class="file"
+                  data-tab-id="tab7"
+                  data-tab-action="open"
+                  for="tab7"
+                >
+                  <span>
+                    <i class="file__icon fa-solid fa-code"></i>
+                    simple-encrypt.js
+                  </span>
+                </label>
               </div>
             </div>
             <div class="side-menu">
@@ -295,6 +306,30 @@
               <div class="tab__content">
                 <%=
                 require('html-loader!./partials/duplicate-count.html').default
+                %>
+              </div>
+              <input id="tab7" name="tabs" type="radio" />
+              <label
+                class="file tab__header"
+                data-tab-id="tab7"
+                data-tab-action="open"
+                for="tab5"
+              >
+                <span>
+                  <i class="file__icon fa-solid fa-code"></i>
+                  simple-encrypt.js
+                  <span class="tab__close">
+                    <i
+                      class="fa-solid fa-xmark"
+                      data-tab-id="tab7"
+                      data-tab-action="close"
+                    ></i>
+                  </span>
+                </span>
+              </label>
+              <div class="tab__content">
+                <%=
+                require('html-loader!./partials/simple-encrypt.html').default
                 %>
               </div>
             </div>
