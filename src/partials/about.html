@@ -17,7 +17,7 @@
  * сильной и отзывчивой командой.
  */
 
- const props = {
+const props = {
   position: 'фронтенд-разработчик',
   what: 'интересный и полезный для общества проект',
   where: 'в продуктовой компании',
@@ -27,8 +27,8 @@
 
 const yuriyLysyukJob = findAwesomeJob('Юрий Лысюк', props);
 
-function findAwesomeJob(developer, props) {
-  return `${developer} — ${props.position} ${props.where}!`;
+function findAwesomeJob(developer, { position, where }) {
+  return `Ехууу! ${developer} — ${position} ${where}!`;
 }
 
 </code></pre>
