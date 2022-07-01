@@ -127,6 +127,17 @@
                     code-ex-1.js
                   </span>
                 </label>
+                <label
+                  class="file"
+                  data-tab-id="tab6"
+                  data-tab-action="open"
+                  for="tab6"
+                >
+                  <span>
+                    <i class="file__icon fa-solid fa-code"></i>
+                    duplicate-count.js
+                  </span>
+                </label>
               </div>
             </div>
             <div class="side-menu">
@@ -259,6 +270,30 @@
               </label>
               <div class="tab__content">
                 <%= require('html-loader!./partials/code-ex-1.html').default %>
+              </div>
+              <input id="tab6" name="tabs" type="radio" />
+              <label
+                class="file tab__header"
+                data-tab-id="tab6"
+                data-tab-action="open"
+                for="tab5"
+              >
+                <span>
+                  <i class="file__icon fa-solid fa-code"></i>
+                  duplicate-count.js
+                  <span class="tab__close">
+                    <i
+                      class="fa-solid fa-xmark"
+                      data-tab-id="tab6"
+                      data-tab-action="close"
+                    ></i>
+                  </span>
+                </span>
+              </label>
+              <div class="tab__content">
+                <%=
+                require('html-loader!./partials/duplicate-count.html').default
+                %>
               </div>
             </div>
           </div>
