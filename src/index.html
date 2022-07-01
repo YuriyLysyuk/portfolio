@@ -124,7 +124,7 @@
                 >
                   <span>
                     <i class="file__icon fa-solid fa-code"></i>
-                    code-ex-1.js
+                    count-characters.js
                   </span>
                 </label>
                 <label
@@ -258,7 +258,7 @@
               >
                 <span>
                   <i class="file__icon fa-solid fa-code"></i>
-                  code-ex-1.js
+                  count-characters.js
                   <span class="tab__close">
                     <i
                       class="fa-solid fa-xmark"
@@ -269,7 +269,9 @@
                 </span>
               </label>
               <div class="tab__content">
-                <%= require('html-loader!./partials/code-ex-1.html').default %>
+                <%=
+                require('html-loader!./partials/count-characters.html').default
+                %>
               </div>
               <input id="tab6" name="tabs" type="radio" />
               <label
