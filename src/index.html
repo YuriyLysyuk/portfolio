@@ -149,6 +149,17 @@
                     simple-encrypt.js
                   </span>
                 </label>
+                <label
+                  class="file"
+                  data-tab-id="tab8"
+                  data-tab-action="open"
+                  for="tab8"
+                >
+                  <span>
+                    <i class="file__icon fa-solid fa-code"></i>
+                    sort-the-odd.js
+                  </span>
+                </label>
               </div>
             </div>
             <div class="side-menu">
@@ -329,7 +340,29 @@
               </label>
               <div class="tab__content">
                 <%=
-                require('html-loader!./partials/simple-encrypt.html').default
+                require('html-loader!./partials/simple-encrypt.html').default %>
+              </div>
+              <input id="tab8" name="tabs" type="radio" />
+              <label
+                class="file tab__header"
+                data-tab-id="tab8"
+                data-tab-action="open"
+                for="tab5"
+              >
+                <span>
+                  <i class="file__icon fa-solid fa-code"></i>
+                  sort-the-odd.js
+                  <span class="tab__close">
+                    <i
+                      class="fa-solid fa-xmark"
+                      data-tab-id="tab8"
+                      data-tab-action="close"
+                    ></i>
+                  </span>
+                </span>
+              </label>
+              <div class="tab__content">
+                <%= require('html-loader!./partials/sort-the-odd.html').default
                 %>
               </div>
             </div>
