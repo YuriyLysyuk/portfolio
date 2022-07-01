@@ -10,11 +10,11 @@
 
 @import 'base';
 @import 'text-types';
+@import 'ui/code';
+@import 'ui/file';
+
 @import 'layout';
 @import 'components/nav';
+@import 'components/tabs';
+@import 'components/side-menu';
 @import 'sections/hello';
-
-.svg-inline--fa {
-  width: 2.4rem;
-  height: 2.4rem;
-}

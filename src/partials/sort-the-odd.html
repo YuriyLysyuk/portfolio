@@ -1,0 +1,21 @@
+<pre><code class="js-code">
+/**
+ * Sort the odd
+ * @link https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
+ */
+
+function sortArray(array) {
+  const clone = [...array];
+  const odd = clone.filter((value) => value % 2).sort((a, b) => a - b);
+  let i = 0;
+
+  return clone.map((value) => {
+    if (value % 2) {
+      return odd[i++];
+    }
+
+    return value;
+  });
+}
+
+</code></pre>

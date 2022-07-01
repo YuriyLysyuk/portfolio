@@ -1,0 +1,97 @@
+/**
+ * Tabs
+ */
+
+.tabs {
+  --open-tabs-count: 1;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  input[type='radio'] {
+    @extend %hidden;
+  }
+}
+
+.tab {
+  &__header {
+    display: none;
+    width: calc(100% / var(--open-tabs-count));
+    border-right: $border-width solid $border-color;
+    order: 1;
+
+    & > span {
+      padding: 1rem 4rem 1rem 1.4rem;
+    }
+
+    &:hover .tab__close {
+      opacity: 1;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+    background-color: inherit;
+    opacity: 0;
+    z-index: 1;
+    @extend %transition;
+
+    & .svg-inline--fa {
+      width: 1rem;
+      height: auto;
+      padding: 0.4rem 0.7rem;
+      border-radius: 0.3rem;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+
+  &__content {
+    display: none;
+    width: 100%;
+    border-top: $border-width solid $border-color;
+    order: 2;
+
+    pre code.hljs {
+      border: 0;
+      border-radius: 0;
+    }
+  }
+
+  &_opened {
+    display: none;
+
+    @include media('>=#{$mobile-menu-breakpoint}') {
+      display: block;
+    }
+  }
+}
+
+[id^='tab']:checked + [class~='tab__header'] {
+  background-color: $code-bg-color;
+  @extend %file-active;
+}
+
+[id^='tab']:checked + [class~='tab__header']:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -$border-width;
+  width: 100%;
+  border-bottom: $border-width solid $code-bg-color;
+}
+
+[id^='tab']:checked + [class~='tab__header'] + [class~='tab__content'] {
+  display: block;
+}

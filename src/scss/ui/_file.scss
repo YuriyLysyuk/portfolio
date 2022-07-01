@@ -1,0 +1,45 @@
+/**
+ * File
+ */
+
+%file-active {
+  color: $menu-hover-color;
+
+  .file__icon {
+    color: $accent-color;
+  }
+}
+
+.file {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: fit-content;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: $menu-color;
+  background-color: $layout-bg-color;
+  cursor: pointer;
+
+  & > span {
+    position: relative;
+    display: block;
+    padding: 0.8rem;
+    background-color: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    @extend %transition;
+
+    @include media('>=#{$mobile-menu-breakpoint}') {
+      padding: 1rem;
+    }
+
+    &:hover {
+      @extend %file-active;
+    }
+  }
+
+  &_active > span {
+    @extend %file-active;
+  }
+}

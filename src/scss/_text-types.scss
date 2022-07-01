@@ -8,23 +8,13 @@
   line-height: 140%;
   color: #607b96;
 
-  &::before {
+  &:before {
     content: '// ';
   }
 
   @include media('>=sm') {
     font-size: 1.8rem;
     line-height: 2.4rem;
-  }
-}
-
-.code {
-  font-weight: 500;
-
-  &.hljs {
-    & a {
-      color: inherit;
-    }
   }
 }
 
@@ -39,5 +29,9 @@
         line-height: 2.1rem;
       }
     }
+  }
+
+  &_hidden {
+    @extend %hidden;
   }
 }
