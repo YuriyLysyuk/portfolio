@@ -160,6 +160,17 @@
                     sort-the-odd.js
                   </span>
                 </label>
+                <label
+                  class="file"
+                  data-tab-id="tab9"
+                  data-tab-action="open"
+                  for="tab9"
+                >
+                  <span>
+                    <i class="file__icon fa-solid fa-code"></i>
+                    expanded-form.js
+                  </span>
+                </label>
               </div>
             </div>
             <div class="side-menu">
@@ -363,6 +374,29 @@
               </label>
               <div class="tab__content">
                 <%= require('html-loader!./partials/sort-the-odd.html').default
+                %>
+              </div>
+              <input id="tab9" name="tabs" type="radio" />
+              <label
+                class="file tab__header"
+                data-tab-id="tab9"
+                data-tab-action="open"
+                for="tab5"
+              >
+                <span>
+                  <i class="file__icon fa-solid fa-code"></i>
+                  expanded-form.js
+                  <span class="tab__close">
+                    <i
+                      class="fa-solid fa-xmark"
+                      data-tab-id="tab9"
+                      data-tab-action="close"
+                    ></i>
+                  </span>
+                </span>
+              </label>
+              <div class="tab__content">
+                <%= require('html-loader!./partials/expanded-form.html').default
                 %>
               </div>
             </div>
