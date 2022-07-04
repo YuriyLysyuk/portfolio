@@ -43,6 +43,19 @@ h1,
   line-height: 8.1rem;
 }
 
+h2 {
+  .section & {
+    padding: 2.1rem 1rem 2.9rem;
+    font-size: 1.4rem;
+    line-height: 140%;
+    text-transform: lowercase;
+
+    &:before {
+      content: '_';
+    }
+  }
+}
+
 html,
 button,
 input,

@@ -31,7 +31,9 @@
     }
   }
 
-  &_hidden {
-    @extend %hidden;
+  &_hidden_pc {
+    @include media('>=#{$mobile-menu-breakpoint}') {
+      @include hidden-mixin;
+    }
   }
 }

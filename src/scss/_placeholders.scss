@@ -15,8 +15,12 @@
   }
 }
 
-%hidden {
+@mixin hidden-mixin {
   position: absolute;
   top: 0;
   left: -999rem;
+}
+
+%hidden {
+  @include hidden-mixin;
 }
