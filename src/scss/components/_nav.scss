@@ -116,6 +116,7 @@
     position: relative;
     display: flex;
     @extend %block-padding;
+    text-transform: lowercase;
     color: $menu-color;
     white-space: nowrap;
     border-right: $border-width solid $border-color;
