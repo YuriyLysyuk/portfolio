@@ -39,4 +39,9 @@
   &:hover > span {
     @extend %file-active;
   }
+
+  &__icon {
+    width: 100%;
+    max-width: 2rem;
+  }
 }

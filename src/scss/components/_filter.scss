@@ -1,0 +1,48 @@
+/**
+ * Filter
+ */
+
+.filter {
+  &__toggle {
+    @extend %hidden;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: '';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.9rem;
+      height: 1.9rem;
+      margin: 1rem;
+      background-color: transparent;
+      border: $border-width solid $menu-color;
+      border-radius: 0.2rem;
+      @extend %transition;
+    }
+
+    &:hover:before {
+      box-shadow: 0 0 0.2rem 0.2rem rgba($menu-color, 0.3);
+    }
+
+    & > span {
+      padding-left: 1.4rem;
+    }
+  }
+}
+
+[class~='filter__toggle']:checked ~ [class~='filter__label'] {
+  @extend %file-active;
+
+  &:before {
+    content: '\2714';
+    color: $text-color;
+    background-color: $menu-color;
+    border-color: $menu-color;
+    box-shadow: 0 0 0.2rem 0.2rem rgba($menu-color, 0.3);
+  }
+}
