@@ -407,7 +407,42 @@
         </section>
 
         <section class="js-section section section_2col" id="projects">
-          <h2>Проекты</h2>
+          <h2 class="js-convert-title text_hidden_pc">Проекты</h2>
+          <aside class="js-filter-menu sidebar">
+            <div class="side-menu">
+              <input
+                class="side-menu__toggle"
+                id="toggle-project"
+                type="checkbox"
+                checked
+              />
+              <label class="side-menu__title" for="toggle-project">
+                <i class="fa-solid fa-caret-right"></i>
+                Проекты
+              </label>
+              <div class="side-menu__list filter">
+            </div>
+          </aside>
+          <div class="column">
+            <div class="tabs">
+              <input id="tab-projects" name="projects" type="radio" checked />
+              <label class="file tab__header tab_opened" for="tab-projects">
+                <span>
+                  <i class="file__icon fa-solid fa-code"></i>
+                  Все
+                  <span class="tab__close">
+                    <i
+                      class="fa-solid fa-xmark"
+                      data-tab-id="tab-projects"
+                      data-tab-action="clear"
+                    ></i>
+                  </span>
+                </span>
+              </label>
+              <div class="tab__content">
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="js-section section section_2col" id="contacts">
