@@ -33,13 +33,10 @@
     @include media('>=#{$mobile-menu-breakpoint}') {
       padding: 1rem;
     }
-
-    &:hover {
-      @extend %file-active;
-    }
   }
 
-  &_active > span {
+  &_active > span,
+  &:hover > span {
     @extend %file-active;
   }
 }
