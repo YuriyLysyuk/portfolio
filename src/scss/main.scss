@@ -10,10 +10,10 @@
 
 @import 'base';
 @import 'text-types';
-@import 'ui/code';
-@import 'ui/file';
 
 @import 'layout';
+@import 'components/code';
+@import 'components/file';
 @import 'components/nav';
 @import 'components/tabs';
 @import 'components/side-menu';
