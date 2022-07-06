@@ -8,6 +8,16 @@ module.exports = (env, argv) => {
     mode: isProd ? 'production' : 'development',
     devtool: isProd ? 'source-map' : 'inline-source-map',
 
+    resolve: {
+      alias: {
+        Views: path.join(__dirname, 'src/views/'),
+        Images: path.join(__dirname, 'src/images/'),
+        Fonts: path.join(__dirname, 'src/fonts/'),
+        Styles: path.join(__dirname, 'src/scss/'),
+        Scripts: path.join(__dirname, 'src/js/'),
+      },
+    },
+
     output: {
       path: path.join(__dirname, 'dist/'),
       publicPath: '/',
