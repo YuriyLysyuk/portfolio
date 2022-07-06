@@ -51,7 +51,7 @@ module.exports = (env, argv) => {
           },
         },
         {
-          test: /\.s[ac]ss$/i,
+          test: /\.(css|sass|scss)$/i,
           use: ['css-loader', 'sass-loader'],
         },
         {
