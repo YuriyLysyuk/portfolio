@@ -18,13 +18,6 @@ module.exports = (env, argv) => {
 
     entry: './js/main.js',
 
-    devServer: {
-      static: './dist',
-      hot: false,
-      liveReload: true,
-      port: 9000,
-    },
-
     plugins: [],
 
     module: {
@@ -47,6 +40,20 @@ module.exports = (env, argv) => {
           use: 'svgo-loader',
         },
       ],
+    },
+
+    devServer: {
+      static: {
+        directory: path.join(__dirname, 'dist'),
+      },
+      compress: true,
+      port: 9000,
+      watchFiles: {
+        paths: ['src/**/*.*'],
+        options: {
+          usePolling: true,
+        },
+      },
     },
   };
 };
