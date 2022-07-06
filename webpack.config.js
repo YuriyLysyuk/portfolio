@@ -11,10 +11,10 @@ module.exports = (env, argv) => {
     resolve: {
       alias: {
         Views: path.join(__dirname, 'src/views/'),
-        Images: path.join(__dirname, 'src/images/'),
-        Fonts: path.join(__dirname, 'src/fonts/'),
-        Styles: path.join(__dirname, 'src/styles/'),
-        Scripts: path.join(__dirname, 'src/scripts/'),
+        Images: path.join(__dirname, 'src/assets/images/'),
+        Fonts: path.join(__dirname, 'src/assets/fonts/'),
+        Styles: path.join(__dirname, 'src/assets/styles/'),
+        Scripts: path.join(__dirname, 'src/assets/scripts/'),
       },
     },
 
