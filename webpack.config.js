@@ -24,14 +24,31 @@ module.exports = (env, argv) => {
       filename: 'assets/js/[name].[contenthash:8].js',
     },
 
-    context: path.resolve(__dirname, 'src'),
+    entry: {
+      index: 'src/views/pages/home/index.pug',
+    },
 
-    entry: './js/main.js',
-
-    plugins: [],
+    plugins: [
+      new PugPlugin({
+        verbose: !isProd,
+        pretty: !isProd,
+        modules: [
+          PugPlugin.extractCss({
+            filename: 'assets/css/[name].[contenthash:8].css',
+          }),
+        ],
+      }),
+    ],
 
     module: {
       rules: [
+        {
+          test: /\.pug$/,
+          loader: PugPlugin.loader, // pug-plugin already contain the pug-loader
+          options: {
+            method: 'render', // fast method to generate static HTML files
+          },
+        },
         {
           test: /\.s[ac]ss$/i,
           use: ['css-loader', 'sass-loader'],
