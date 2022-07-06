@@ -8,6 +8,10 @@ module.exports = (env, argv) => {
     mode: isProd ? 'production' : 'development',
     devtool: isProd ? 'source-map' : 'inline-source-map',
 
+    stats: {
+      preset: 'minimal',
+    },
+
     resolve: {
       alias: {
         Views: path.join(__dirname, 'src/views/'),
