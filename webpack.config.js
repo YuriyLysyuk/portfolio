@@ -8,6 +8,12 @@ module.exports = (env, argv) => {
     mode: isProd ? 'production' : 'development',
     devtool: isProd ? 'source-map' : 'inline-source-map',
 
+    output: {
+      path: path.join(__dirname, 'dist/'),
+      publicPath: '/',
+      filename: 'assets/js/[name].[contenthash:8].js',
+    },
+
     context: path.resolve(__dirname, 'src'),
 
     entry: './js/main.js',
@@ -17,13 +23,6 @@ module.exports = (env, argv) => {
       hot: false,
       liveReload: true,
       port: 9000,
-    },
-
-    output: {
-      path: path.resolve(__dirname, './dist'),
-      filename: '[contenthash].bundle.js',
-      clean: true,
-      assetModuleFilename: 'assets/[contenthash][ext][query]',
     },
 
     plugins: [],
