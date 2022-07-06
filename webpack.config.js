@@ -14,7 +14,7 @@ module.exports = (env, argv) => {
         Images: path.join(__dirname, 'src/images/'),
         Fonts: path.join(__dirname, 'src/fonts/'),
         Styles: path.join(__dirname, 'src/scss/'),
-        Scripts: path.join(__dirname, 'src/js/'),
+        Scripts: path.join(__dirname, 'src/scripts/'),
       },
     },
 
