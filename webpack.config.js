@@ -21,6 +21,7 @@ module.exports = (env, argv) => {
     output: {
       path: path.join(__dirname, 'dist/'),
       publicPath: '/',
+      clean: true,
       filename: 'assets/js/[name].[contenthash:8].js',
     },
 
