@@ -50,6 +50,8 @@ module.exports = (env, argv) => {
             method: 'render', // fast method to generate static HTML files
           },
         },
+
+        // styles
         {
           test: /\.(css|sass|scss)$/i,
           use: ['css-loader', 'sass-loader'],
