@@ -54,9 +54,15 @@ module.exports = (env, argv) => {
           test: /\.(css|sass|scss)$/i,
           use: ['css-loader', 'sass-loader'],
         },
+
+        // fonts
         {
-          test: /\.(woff|woff2|eot|ttf|otf)$/i,
+          test: /\.(woff2?|ttf|otf|eot|svg)$/i,
           type: 'asset/resource',
+          include: /assets\/fonts/,
+          generator: {
+            filename: 'assets/fonts/[name][ext][query]',
+          },
         },
         {
           test: /\.(png|jpg|jpeg|gif)$/i,
