@@ -66,9 +66,16 @@ module.exports = (env, argv) => {
             filename: 'assets/fonts/[name][ext][query]',
           },
         },
+
+        // images
         {
-          test: /\.(png|jpg|jpeg|gif)$/i,
+          test: /\.(png|svg|jpe?g|webp)$/i,
+          resourceQuery: { not: [/inline/] }, // ignore images with `?inline` query
           type: 'asset/resource',
+          include: /assets\/images/,
+          generator: {
+            filename: 'assets/img/[name].[hash:8][ext]',
+          },
         },
         {
           test: /\.svg$/i,
