@@ -6,6 +6,7 @@ module.exports = (env, argv) => {
 
   return {
     mode: isProd ? 'production' : 'development',
+    devtool: isProd ? 'source-map' : 'inline-source-map',
 
     context: path.resolve(__dirname, 'src'),
 
@@ -17,8 +18,6 @@ module.exports = (env, argv) => {
       liveReload: true,
       port: 9000,
     },
-
-    devtool: 'source-map',
 
     output: {
       path: path.resolve(__dirname, './dist'),
