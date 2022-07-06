@@ -77,6 +77,20 @@ module.exports = (env, argv) => {
             filename: 'assets/img/[name].[hash:8][ext]',
           },
         },
+
+        // inline images: png or svg icons with size < 4 KB
+        {
+          test: /\.(png|svg)$/i,
+          type: 'asset',
+          include: /assets\/images/,
+          exclude: /favicon/, // don't inline favicon
+          parser: {
+            dataUrlCondition: {
+              maxSize: 4 * 1024,
+            },
+          },
+        },
+
         {
           test: /\.svg$/i,
           type: 'asset',
