@@ -12,14 +12,8 @@ module.exports = (env, argv) => {
       preset: 'minimal',
     },
 
-    resolve: {
-      alias: {
-        Views: path.join(__dirname, 'src/views/'),
-        Images: path.join(__dirname, 'src/assets/images/'),
-        Fonts: path.join(__dirname, 'src/assets/fonts/'),
-        Styles: path.join(__dirname, 'src/assets/styles/'),
-        Scripts: path.join(__dirname, 'src/assets/scripts/'),
-      },
+    entry: {
+      index: 'src/views/pages/home/index.pug',
     },
 
     output: {
@@ -29,8 +23,14 @@ module.exports = (env, argv) => {
       filename: 'assets/js/[name].[contenthash:8].js',
     },
 
-    entry: {
-      index: 'src/views/pages/home/index.pug',
+    resolve: {
+      alias: {
+        Views: path.join(__dirname, 'src/views/'),
+        Images: path.join(__dirname, 'src/assets/images/'),
+        Fonts: path.join(__dirname, 'src/assets/fonts/'),
+        Styles: path.join(__dirname, 'src/assets/styles/'),
+        Scripts: path.join(__dirname, 'src/assets/scripts/'),
+      },
     },
 
     plugins: [
