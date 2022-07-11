@@ -97,6 +97,12 @@ module.exports = (env, argv) => {
       ],
     },
 
+    performance: {
+      hints: isProd ? 'error' : 'warning',
+      maxEntrypointSize: isProd ? 1024000 : 4096000,
+      maxAssetSize: isProd ? 1024000 : 4096000,
+    },
+
     devServer: {
       static: {
         directory: path.join(__dirname, 'dist'),
