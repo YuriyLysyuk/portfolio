@@ -1,0 +1,111 @@
+/**
+ * Typography
+ */
+
+@use '~Styles/base/vars' as v;
+@use '~Styles/base/placeholders';
+
+// Google fonts
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('~Fonts/fira-code-v18-latin_cyrillic-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('~Fonts/fira-code-v18-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('~Fonts/fira-code-v18-latin_cyrillic-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('~Fonts/fira-code-v18-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('~Fonts/fira-code-v18-latin_cyrillic-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('~Fonts/fira-code-v18-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  display: swap;
+}
+
+html {
+  font-size: v.$basic-font-size;
+}
+
+body {
+  font-family: v.$body-font;
+  font-weight: v.$body-font-weight;
+  font-size: v.$paragraph;
+  line-height: v.$line-height;
+  color: v.$text-color;
+}
+
+h1,
+h2,
+h3 {
+  font-family: v.$header-font;
+  font-weight: v.$header-font-weight;
+}
+
+h1 {
+  font-size: 6.2rem;
+  line-height: 8.1rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 140%;
+  text-transform: lowercase;
+
+  &:before {
+    content: '_';
+  }
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: v.$text-color;
+}
+
+a {
+  color: v.$text-color;
+  text-decoration: none;
+
+  @extend %transition;
+
+  &:visited,
+  &:focus,
+  &:active,
+  &:hover {
+    text-decoration: none;
+    outline: 0;
+  }
+
+  &:after {
+    @extend %transition;
+  }
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
