@@ -1,0 +1,9 @@
+/**
+ * Icons
+ */
+
+@use '~Styles/base/placeholders';
+
+svg {
+  @extend %transition;
+}
