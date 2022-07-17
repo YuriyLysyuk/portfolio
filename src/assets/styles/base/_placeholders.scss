@@ -2,16 +2,19 @@
  * Placeholders
  */
 
+@use '~Styles/base/vars' as v;
+@use '~Styles/modules/include-media' as *;
+
 %transition {
   transition: all 0.3s ease-out;
 }
 
 %block-padding {
-  padding: 1.7rem $side-padding-mobile;
+  padding: 1.7rem v.$side-padding-mobile;
 
   @include media('>=sm') {
-    padding-left: $side-padding-pc;
-    padding-right: $side-padding-pc;
+    padding-left: v.$side-padding-pc;
+    padding-right: v.$side-padding-pc;
   }
 }
 
