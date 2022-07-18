@@ -3,7 +3,7 @@
  */
 
 @use '~Styles/base/vars' as v;
-@use '~Styles/modules/include-media' as *;
+@use '~Styles/vendors/include-media' as *;
 @use '~Styles/base/placeholders';
 
 body {
