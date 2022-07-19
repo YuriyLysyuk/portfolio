@@ -23,7 +23,7 @@
     "css-loader": "^6.7.1",
     "highlight.js": "^11.5.1",
     "prettier": "^2.7.1",
-    "pug-plugin": "^2.9.3",
+    "pug-plugin": "^3.0.1",
     "sass": "^1.51.0",
     "sass-loader": "^12.6.0",
     "webpack": "^5.72.0",
