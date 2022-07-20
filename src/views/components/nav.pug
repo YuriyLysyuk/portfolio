@@ -1,0 +1,10 @@
+-
+  const nav = require('~Data/nav.json');
+  const defaultClasses = ['js-convert-title', 'nav__link'];
+
+mixin navLink(data)
+  a(class=defaultClasses, class={ nav__link_push_right: data.isPushRight }, href=data.url)= data.text
+
+.js-header-nav.nav.navbar__nav.navbar__nav_collapse
+  each navItem in nav
+    +navLink(navItem)

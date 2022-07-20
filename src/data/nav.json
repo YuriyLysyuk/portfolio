@@ -1,0 +1,19 @@
+[
+  {
+    "url": "#hello",
+    "text": "Привет"
+  },
+  {
+    "url": "#about",
+    "text": "Обо мне"
+  },
+  {
+    "url": "#projects",
+    "text": "Проекты"
+  },
+  {
+    "url": "#contacts",
+    "text": "Контакты",
+    "isPushRight": true
+  }
+]
