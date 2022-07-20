@@ -2,13 +2,16 @@
  * Hello
  */
 
+@use '~Styles/base/vars' as v;
+@use '~Styles/vendors/include-media' as *;
+
 .hello {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: $gap;
-  min-height: calc(var(--main-node-height) + $border-width);
+  gap: v.$gap;
+  min-height: calc(var(--main-node-height) + v.$border-width);
 
   &:before {
     content: '';
@@ -35,12 +38,12 @@
   &__desc {
     font-size: 2rem;
     line-height: 2.6rem;
-    color: $green;
+    color: v.$green;
 
     @include media('>=sm') {
       font-size: 3.2rem;
       line-height: 4.2rem;
-      color: $blue;
+      color: v.$blue;
     }
 
     &:before {

@@ -2,11 +2,15 @@
  * Text types
  */
 
+@use '~Styles/base/vars' as v;
+@use '~Styles/vendors/include-media' as *;
+@use '~Styles/base/placeholders' as *;
+
 .comment {
   position: relative;
   font-size: 1.6rem;
   line-height: 140%;
-  color: #607b96;
+  color: v.$menu-color;
 
   &:before {
     content: '// ';
@@ -32,7 +36,7 @@
   }
 
   &_hidden_pc {
-    @include media('>=#{$mobile-menu-breakpoint}') {
+    @include media('>=#{v.$mobile-menu-breakpoint}') {
       @include hidden-mixin;
     }
   }

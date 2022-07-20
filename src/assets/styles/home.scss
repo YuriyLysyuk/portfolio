@@ -4,3 +4,6 @@
 
 @use '~Styles/components/navbar';
 @use '~Styles/components/nav';
+@use 'highlight.js/scss/base16/oceanicnext.scss';
+@use '~Styles/components/code';
+@use '~Styles/sections/hello';

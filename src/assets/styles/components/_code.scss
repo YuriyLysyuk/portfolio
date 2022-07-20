@@ -2,18 +2,20 @@
  * Code
  */
 
+@use '~Styles/base/vars' as v;
+
 .code,
 code {
-  font-family: $code-font;
-  font-weight: $code-font-weight;
+  font-family: v.$code-font;
+  font-weight: v.$code-font-weight;
 
   &.hljs {
     pre & {
       padding-top: 0;
       padding-bottom: 0;
-      background: $code-bg-color;
-      border: $border-width solid $border-color;
-      border-radius: $border-radius;
+      background: v.$code-bg-color;
+      border: v.$border-width solid v.$border-color;
+      border-radius: v.$border-radius;
     }
 
     & a {
@@ -27,7 +29,7 @@ code {
         height: 100%;
         left: 0;
         bottom: -0.2rem;
-        border: $border-width solid transparent;
+        border: v.$border-width solid transparent;
       }
 
       &:hover:after {

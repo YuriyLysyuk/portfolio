@@ -1,6 +1,5 @@
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
-import 'highlight.js/scss/base16/oceanicnext.scss';
 
 hljs.registerLanguage('javascript', javascript);
 
@@ -13,7 +12,6 @@ codeNodes.forEach((codeNode) => {
 });
 
 // Helpers
-
 function replaceToActiveLink(innerHTML) {
   return innerHTML.replace(
     /(https?:\/\/[\w-_./]+)/gi,
