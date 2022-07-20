@@ -1,0 +1,13 @@
+extends ~Views/layouts/default.pug
+
+block variables
+  - const page = require('~Data/home.json');
+  - const title = page.head.title;
+  - const description = page.head.description;
+
+block append style
+  link(href=require('~Styles/home.scss'), rel='stylesheet')
+
+block append script
+  script(src=require('~Scripts/home.js'))
+
