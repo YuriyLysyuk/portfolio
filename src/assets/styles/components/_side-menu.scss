@@ -2,12 +2,16 @@
  * Side menu
  */
 
+@use '~Styles/base/vars' as v;
+@use '~Styles/vendors/include-media' as *;
+@use '~Styles/base/placeholders';
+
 .side-menu {
   position: relative;
   margin-bottom: 0.3rem;
   overflow: hidden;
 
-  @include media('>=#{$mobile-menu-breakpoint}') {
+  @include media('>=#{v.$mobile-menu-breakpoint}') {
     margin-bottom: 0;
   }
 
@@ -21,14 +25,14 @@
     padding: 0.5rem 1rem;
     font-size: 1.6rem;
     line-height: 2.1rem;
-    background-color: $border-color;
+    background-color: v.$border-color;
     cursor: pointer;
     z-index: 1;
 
-    @include media('>=#{$mobile-menu-breakpoint}') {
+    @include media('>=#{v.$mobile-menu-breakpoint}') {
       padding: 1rem;
-      background-color: $layout-bg-color;
-      border-bottom: $border-width solid $border-color;
+      background-color: v.$layout-bg-color;
+      border-bottom: v.$border-width solid v.$border-color;
     }
 
     .fa-caret-right {
@@ -65,10 +69,10 @@
   padding-bottom: 1.5rem;
   opacity: 1;
 
-  @include media('>=#{$mobile-menu-breakpoint}') {
+  @include media('>=#{v.$mobile-menu-breakpoint}') {
     padding-top: 1rem;
     padding-bottom: 2rem;
-    border-bottom: $border-width solid $border-color;
+    border-bottom: v.$border-width solid v.$border-color;
   }
 
   .side-menu:last-child & {

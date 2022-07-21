@@ -2,13 +2,9 @@
  * File
  */
 
-%file-active {
-  color: $menu-hover-color;
-
-  .file__icon {
-    color: $accent-color;
-  }
-}
+@use '~Styles/base/vars' as v;
+@use '~Styles/vendors/include-media' as *;
+@use '~Styles/base/placeholders';
 
 .file {
   position: relative;
@@ -17,8 +13,8 @@
   max-width: fit-content;
   font-size: 1.6rem;
   line-height: 2.1rem;
-  color: $menu-color;
-  background-color: $layout-bg-color;
+  color: v.$menu-color;
+  background-color: v.$layout-bg-color;
   cursor: pointer;
 
   & > span {
@@ -30,7 +26,7 @@
     overflow: hidden;
     @extend %transition;
 
-    @include media('>=#{$mobile-menu-breakpoint}') {
+    @include media('>=#{v.$mobile-menu-breakpoint}') {
       padding: 1rem;
     }
   }

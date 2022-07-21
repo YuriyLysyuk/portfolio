@@ -2,6 +2,10 @@
  * Tabs
  */
 
+@use '~Styles/base/vars' as v;
+@use '~Styles/vendors/include-media' as *;
+@use '~Styles/base/placeholders';
+
 .tabs {
   --open-tabs-count: 1;
   position: relative;
@@ -17,7 +21,7 @@
   &__header {
     display: none;
     width: calc(100% / var(--open-tabs-count));
-    border-right: $border-width solid $border-color;
+    border-right: v.$border-width solid v.$border-color;
     order: 1;
 
     & > span {
@@ -60,7 +64,7 @@
   &__content {
     display: none;
     width: 100%;
-    border-top: $border-width solid $border-color;
+    border-top: v.$border-width solid v.$border-color;
     order: 2;
 
     pre code.hljs {
@@ -72,14 +76,14 @@
   &_opened {
     display: none;
 
-    @include media('>=#{$mobile-menu-breakpoint}') {
+    @include media('>=#{v.$mobile-menu-breakpoint}') {
       display: block;
     }
   }
 }
 
 [id^='tab']:checked + [class~='tab__header'] {
-  background-color: $code-bg-color;
+  background-color: v.$code-bg-color;
   @extend %file-active;
 }
 
@@ -87,9 +91,9 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: -$border-width;
+  bottom: -(v.$border-width);
   width: 100%;
-  border-bottom: $border-width solid $code-bg-color;
+  border-bottom: v.$border-width solid v.$code-bg-color;
 }
 
 [id^='tab']:checked + [class~='tab__header'] + [class~='tab__content'] {

@@ -27,3 +27,11 @@
 %hidden {
   @include hidden-mixin;
 }
+
+%file-active {
+  color: v.$menu-hover-color;
+
+  .file__icon {
+    color: v.$accent-color;
+  }
+}

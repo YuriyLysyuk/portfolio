@@ -27,3 +27,259 @@ block content
       p.js-code.code.text_size_smaller.
         const githubLink = '#{ common.social.github.link }';
 
+    section#about.js-section.section.section_2col
+      h2.js-convert-title.h2.text_hidden_pc Обо мне
+
+      aside.js-tabs-menu.sidebar
+        .side-menu
+          input#toggle-about.side-menu__toggle(type='checkbox', checked)
+          label.side-menu__title(for='toggle-about')
+            i.fa-solid.fa-caret-right
+            |
+            | Обо мне
+
+          .side-menu__list
+            label.file.file_active(
+              data-tab-id='tab1',
+              data-tab-action='open',
+              for='tab1'
+            )
+              span
+                i.file__icon.fa-solid.fa-code
+                |
+                | about.js
+
+            label.file(data-tab-id='tab2', data-tab-action='open', for='tab2')
+              span
+                i.file__icon.fa-solid.fa-code
+                |
+                | skills.js
+
+            label.file(data-tab-id='tab3', data-tab-action='open', for='tab3')
+              span
+                i.file__icon.fa-solid.fa-code
+                |
+                | experience.js
+
+            label.file(data-tab-id='tab4', data-tab-action='open', for='tab4')
+              span
+                i.file__icon.fa-solid.fa-code
+                |
+                | education.js
+
+        .side-menu
+          input#toggle-examples.side-menu__toggle(type='checkbox')
+          label.side-menu__title(for='toggle-examples')
+            i.fa-solid.fa-caret-right
+            |
+            | Примеры кода
+
+          .side-menu__list
+            label.file(data-tab-id='tab5', data-tab-action='open', for='tab5')
+              span
+                i.file__icon.fa-solid.fa-code
+                |
+                | count-characters.js
+
+            label.file(data-tab-id='tab6', data-tab-action='open', for='tab6')
+              span
+                i.file__icon.fa-solid.fa-code
+                |
+                | duplicate-count.js
+
+            label.file(data-tab-id='tab7', data-tab-action='open', for='tab7')
+              span
+                i.file__icon.fa-solid.fa-code
+                |
+                | simple-encrypt.js
+
+            label.file(data-tab-id='tab8', data-tab-action='open', for='tab8')
+              span
+                i.file__icon.fa-solid.fa-code
+                |
+                | sort-the-odd.js
+
+            label.file(data-tab-id='tab9', data-tab-action='open', for='tab9')
+              span
+                i.file__icon.fa-solid.fa-code
+                |
+                | expanded-form.js
+
+        .side-menu
+          input#toggle-contacts.side-menu__toggle(type='checkbox')
+          label.side-menu__title(for='toggle-contacts')
+            i.fa-solid.fa-caret-right
+            |
+            | Контакты
+
+          .side-menu__list
+            a.file(href='mailto:work@YuriyLysyuk.ru')
+              span
+                i.fa-solid.fa-envelope
+                |
+                | work@YuriyLysyuk.ru
+
+            a.file(href='tel:+79519790755')
+              span
+                i.fa-solid.fa-phone
+                |
+                | +7 (951) 979-07-55
+
+      .column
+        .js-tabs.tabs
+          input#tab1(name='tabs', type='radio', checked)
+          label.file.tab__header.tab_opened(
+            data-tab-id='tab1',
+            data-tab-action='open',
+            for='tab1'
+          )
+            span
+              i.file__icon.fa-solid.fa-code
+              |
+              | about.js
+          .tab__content
+            include ~Views/content/about.pug
+
+          input#tab2(name='tabs', type='radio')
+          label.file.tab__header(
+            data-tab-id='tab2',
+            data-tab-action='open',
+            for='tab2'
+          )
+            span
+              i.file__icon.fa-solid.fa-code
+              |
+              | skills.js
+              span.tab__close
+                i.fa-solid.fa-xmark(
+                  data-tab-id='tab2',
+                  data-tab-action='close'
+                )
+          .tab__content
+            include ~Views/content/skills.pug
+
+          input#tab3(name='tabs', type='radio')
+          label.file.tab__header(
+            data-tab-id='tab3',
+            data-tab-action='open',
+            for='tab3'
+          )
+            span
+              i.file__icon.fa-solid.fa-code
+              |
+              | experience.js
+              span.tab__close
+                i.fa-solid.fa-xmark(
+                  data-tab-id='tab3',
+                  data-tab-action='close'
+                )
+          .tab__content
+            include ~Views/content/experience.pug
+
+          input#tab4(name='tabs', type='radio')
+          label.file.tab__header(
+            data-tab-id='tab4',
+            data-tab-action='open',
+            for='tab4'
+          )
+            span
+              i.file__icon.fa-solid.fa-code
+              |
+              | education.js
+              span.tab__close
+                i.fa-solid.fa-xmark(
+                  data-tab-id='tab4',
+                  data-tab-action='close'
+                )
+          .tab__content
+            include ~Views/content/education.pug
+
+          input#tab5(name='tabs', type='radio')
+          label.file.tab__header(
+            data-tab-id='tab5',
+            data-tab-action='open',
+            for='tab5'
+          )
+            span
+              i.file__icon.fa-solid.fa-code
+              |
+              | count-characters.js
+              span.tab__close
+                i.fa-solid.fa-xmark(
+                  data-tab-id='tab5',
+                  data-tab-action='close'
+                )
+          .tab__content
+            include ~Views/content/count-characters.pug
+
+          input#tab6(name='tabs', type='radio')
+          label.file.tab__header(
+            data-tab-id='tab6',
+            data-tab-action='open',
+            for='tab6'
+          )
+            span
+              i.file__icon.fa-solid.fa-code
+              |
+              | duplicate-count.js
+              span.tab__close
+                i.fa-solid.fa-xmark(
+                  data-tab-id='tab6',
+                  data-tab-action='close'
+                )
+          .tab__content
+            include ~Views/content/duplicate-count.pug
+
+          input#tab7(name='tabs', type='radio')
+          label.file.tab__header(
+            data-tab-id='tab7',
+            data-tab-action='open',
+            for='tab7'
+          )
+            span
+              i.file__icon.fa-solid.fa-code
+              |
+              | simple-encrypt.js
+              span.tab__close
+                i.fa-solid.fa-xmark(
+                  data-tab-id='tab7',
+                  data-tab-action='close'
+                )
+          .tab__content
+            include ~Views/content/simple-encrypt.pug
+
+          input#tab8(name='tabs', type='radio')
+          label.file.tab__header(
+            data-tab-id='tab8',
+            data-tab-action='open',
+            for='tab8'
+          )
+            span
+              i.file__icon.fa-solid.fa-code
+              |
+              | sort-the-odd.js
+              span.tab__close
+                i.fa-solid.fa-xmark(
+                  data-tab-id='tab8',
+                  data-tab-action='close'
+                )
+          .tab__content
+            include ~Views/content/sort-the-odd.pug
+
+          input#tab9(name='tabs', type='radio')
+          label.file.tab__header(
+            data-tab-id='tab9',
+            data-tab-action='open',
+            for='tab9'
+          )
+            span
+              i.file__icon.fa-solid.fa-code
+              |
+              | expanded-form.js
+              span.tab__close
+                i.fa-solid.fa-xmark(
+                  data-tab-id='tab9',
+                  data-tab-action='close'
+                )
+          .tab__content
+            include ~Views/content/expanded-form.pug
