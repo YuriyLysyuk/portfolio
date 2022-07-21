@@ -11,8 +11,6 @@ code {
 
   &.hljs {
     pre & {
-      padding-top: 0;
-      padding-bottom: 0;
       background: v.$code-bg-color;
       border: v.$border-width solid v.$border-color;
       border-radius: v.$border-radius;
