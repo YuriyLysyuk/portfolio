@@ -1,0 +1,30 @@
+pre
+  code.js-code.
+    /**
+    * Write Number in Expanded Form - Part 2
+    * @link https://www.codewars.com/kata/write-number-in-expanded-form-part-2
+    */
+
+    function expandedForm(num) {
+      return String(num)
+        .split('.')
+        .map((part, partIndex) => {
+          return part
+            .split('')
+            .reverse()
+            .map((v, i, arr) => {
+              if (v === '0') return null;
+
+              if (partIndex === 0) {
+                return v * Math.pow(10, i);
+              }
+
+              return `${v}/${Math.pow(10, arr.length - i)}`;
+            })
+            .reverse()
+            .filter((v) => v)
+            .join(' + ');
+        })
+        .filter((v) => v)
+        .join(' + ');
+    }
