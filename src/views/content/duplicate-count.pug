@@ -1,0 +1,16 @@
+pre
+  code.js-code.
+    /**
+    * Counting Duplicates
+    * @link https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1
+    */
+
+    function duplicateCount(text) {
+      const normalizeText = text.toLowerCase().replace(/\d/g, '');
+      const uniqLetters = [...new Set(normalizeText)];
+
+      return uniqLetters.filter(
+        (letter) =>
+          normalizeText.indexOf(letter) !== normalizeText.lastIndexOf(letter)
+      ).length;
+    }
