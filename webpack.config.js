@@ -13,7 +13,7 @@ module.exports = (env, argv) => {
     },
 
     entry: {
-      index: 'src/views/pages/home/index.pug',
+      index: 'src/views/index.pug',
     },
 
     output: {
