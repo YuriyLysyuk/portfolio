@@ -2,5 +2,66 @@
   "head": {
     "title": "Юрий Лысюк — Фронтенд разработчик",
     "description": "Портфолио"
-  }
+  },
+  "tabsMenu": [
+    {
+      "name": "Обо мне",
+      "isChecked": true,
+      "list": [
+        {
+          "id": "about",
+          "name": "about.js",
+          "iconClasses": ["fa-brands", "fa-js-square"],
+          "isLock": true,
+          "isChecked": true
+        },
+        {
+          "id": "skills",
+          "name": "skills.js",
+          "iconClasses": ["fa-brands", "fa-js-square"]
+        },
+        {
+          "id": "experience",
+          "name": "experience.js",
+          "iconClasses": ["fa-brands", "fa-js-square"]
+        },
+        {
+          "id": "education",
+          "name": "education.js",
+          "iconClasses": ["fa-brands", "fa-js-square"]
+        }
+      ]
+    },
+    {
+      "id": "examples",
+      "name": "Примеры кода",
+      "list": [
+        {
+          "id": "count-characters",
+          "name": "count-characters.js",
+          "iconClasses": ["fa-brands", "fa-js-square"]
+        },
+        {
+          "id": "duplicate-count",
+          "name": "duplicate-count.js",
+          "iconClasses": ["fa-brands", "fa-js-square"]
+        },
+        {
+          "id": "simple-encrypt",
+          "name": "simple-encrypt.js",
+          "iconClasses": ["fa-brands", "fa-js-square"]
+        },
+        {
+          "id": "sort-the-odd",
+          "name": "sort-the-odd.js",
+          "iconClasses": ["fa-brands", "fa-js-square"]
+        },
+        {
+          "id": "expanded-form",
+          "name": "expanded-form.js",
+          "iconClasses": ["fa-brands", "fa-js-square"]
+        }
+      ]
+    }
+  ]
 }

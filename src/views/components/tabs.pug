@@ -1,0 +1,29 @@
+include ~Views/content/content
+
+mixin tabs(tabsMenu)
+  .js-tabs.tabs
+    each tabMenu in tabsMenu
+      each tab in tabMenu.list
+        - const { id, name, iconClasses, isLock, isChecked } = tab;
+        input(id=`tab-${id}`, name='tabs', type='radio', checked=isChecked)
+
+        label.file.tab__header(
+          class=isChecked ? 'tab_opened' : '',
+          data-tab-id=`tab-${id}`,
+          data-tab-action='open',
+          for=`tab-${id}`
+        )
+          span
+            i.file__icon(class=iconClasses)
+            |
+            | #{ name }
+
+            unless isLock
+              span.tab__close
+                i.fa-solid.fa-xmark(
+                  data-tab-id=`tab-${id}`,
+                  data-tab-action='close'
+                )
+
+        .tab__content
+          +content(tab.id)
