@@ -17,7 +17,7 @@ const tabs = [...tabRadioNodes].reduce((obj, radio) => {
   return obj;
 }, {});
 
-let openedTabs = ['tab1'];
+let openedTabs = ['tab-about'];
 
 tabsMenuNode.addEventListener('click', onTabsClick);
 tabsNode.addEventListener('click', onTabsClick);
