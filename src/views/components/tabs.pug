@@ -4,14 +4,15 @@ mixin tabs(tabsMenu)
   .js-tabs.tabs
     each tabMenu in tabsMenu
       each tab in tabMenu.list
-        - const { id, name, iconClasses, isLock, isChecked } = tab;
-        input(id=`tab-${id}`, name='tabs', type='radio', checked=isChecked)
+        - const { id, name, order, iconClasses, isLock, isChecked } = tab;
+
+        input(id=`tab-${order}-${id}`, name='tabs', type='radio', checked=isChecked)
 
         label.file.tab__header(
           class=isChecked ? 'tab_opened' : '',
-          data-tab-id=`tab-${id}`,
+          data-tab-id=`tab-${order}-${id}`,
           data-tab-action='open',
-          for=`tab-${id}`
+          for=`tab-${order}-${id}`
         )
           span
             i.file__icon(class=iconClasses)
@@ -21,7 +22,7 @@ mixin tabs(tabsMenu)
             unless isLock
               span.tab__close
                 i.fa-solid.fa-xmark(
-                  data-tab-id=`tab-${id}`,
+                  data-tab-id=`tab-${order}-${id}`,
                   data-tab-action='close'
                 )
 
