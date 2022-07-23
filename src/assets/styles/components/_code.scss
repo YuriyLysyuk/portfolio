@@ -1,0 +1,38 @@
+/**
+ * Code
+ */
+
+@use '~Styles/base/vars' as v;
+
+.code,
+code {
+  font-family: v.$code-font;
+  font-weight: v.$code-font-weight;
+
+  &.hljs {
+    pre & {
+      background: v.$code-bg-color;
+      border: v.$border-width solid v.$border-color;
+      border-radius: v.$border-radius;
+    }
+
+    & a {
+      position: relative;
+      color: inherit;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: -0.2rem;
+        border: v.$border-width solid transparent;
+      }
+
+      &:hover:after {
+        border-bottom-color: unset;
+      }
+    }
+  }
+}

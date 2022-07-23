@@ -1,0 +1,16 @@
+include ~Views/components/side-menu-list
+
+mixin side-menus(sideMenus)
+  each sideMenu in sideMenus
+    +side-menu(sideMenu)
+
+mixin side-menu({id, name, isChecked, list})
+  .side-menu
+    input.side-menu__toggle(id=`toggle-${id}`, type='checkbox', checked=isChecked)
+
+    label.side-menu__title(for=`toggle-${id}`)
+      i.fa-solid.fa-caret-right
+      |
+      | #{ name }
+
+    +side-menu-list(list)

@@ -1,0 +1,58 @@
+/**
+ * Vars
+ */
+
+// Fonts
+$font-family: 'Fira Code', monospace;
+$font-family-title: 'Fira Code', monospace;
+
+$header-font: $font-family-title;
+$header-font-weight: 400;
+
+$body-font: $font-family;
+$body-font-weight: 400;
+
+$code-font: $font-family;
+$code-font-weight: 400;
+
+// For REM / EM
+$basic-font-size: 62.5%;
+$paragraph: 1.8rem;
+$line-height: 2.4rem;
+
+// Mobile menu breakpoint
+$mobile-menu-breakpoint: 'lg';
+
+// Pallete
+$green: #43d9ad;
+$blue: #4d5bce;
+$orange: #fea55f;
+
+// Basic Colors
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+
+// Mixing Colors
+$body-bg-color: #010c15;
+$layout-bg-color: #011627;
+$text-color: #e5e9f0;
+$inverted-text-color: $black;
+$code-bg-color: #011221;
+$menu-color: #607b96;
+$menu-hover-color: $text-color;
+$accent-color: $orange;
+$border-color: #1e2d3d;
+
+// Margins, paddings, gaps, borders
+$gap: 1rem;
+$border-width: 0.1rem;
+$border-radius: 0.8rem;
+$side-padding-mobile: 1.7rem;
+$side-padding-pc: 3.2rem;
+$sidebar-width: 24.2rem;
+
+// CSS variables
+:root {
+  --main-node-height: auto;
+}

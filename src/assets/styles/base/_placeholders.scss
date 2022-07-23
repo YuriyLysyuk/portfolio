@@ -1,0 +1,37 @@
+/**
+ * Placeholders
+ */
+
+@use '~Styles/base/vars' as v;
+@use '~Styles/vendors/include-media' as *;
+
+%transition {
+  transition: all 0.3s ease-out;
+}
+
+%block-padding {
+  padding: 1.7rem v.$side-padding-mobile;
+
+  @include media('>=sm') {
+    padding-left: v.$side-padding-pc;
+    padding-right: v.$side-padding-pc;
+  }
+}
+
+@mixin hidden-mixin {
+  position: absolute;
+  top: 0;
+  left: -999rem;
+}
+
+%hidden {
+  @include hidden-mixin;
+}
+
+%file-active {
+  color: v.$menu-hover-color;
+
+  .file__icon {
+    color: v.$accent-color;
+  }
+}

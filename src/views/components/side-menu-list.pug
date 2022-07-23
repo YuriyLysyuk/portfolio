@@ -1,0 +1,15 @@
+mixin side-menu-list(list)
+  .side-menu__list
+    each tab in list
+      - const { id, name, order, iconClasses, isChecked } = tab;
+
+      label.file(
+        class=isChecked ? 'file_active' : '',
+        data-tab-id=`tab-${order}-${id}`,
+        data-tab-action='open',
+        for=`tab-${order}-${id}`
+      )
+        span
+          i.file__icon(class=iconClasses)
+          |
+          | #{ name }

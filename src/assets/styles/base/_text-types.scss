@@ -1,0 +1,43 @@
+/**
+ * Text types
+ */
+
+@use '~Styles/base/vars' as v;
+@use '~Styles/vendors/include-media' as *;
+@use '~Styles/base/placeholders' as *;
+
+.comment {
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 140%;
+  color: v.$menu-color;
+
+  &:before {
+    content: '// ';
+  }
+
+  @include media('>=sm') {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+
+.text {
+  &_size {
+    &_smaller {
+      font-size: 1.4rem;
+      line-height: 140%;
+
+      @include media('>=sm') {
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+      }
+    }
+  }
+
+  &_hidden_pc {
+    @include media('>=#{v.$mobile-menu-breakpoint}') {
+      @include hidden-mixin;
+    }
+  }
+}

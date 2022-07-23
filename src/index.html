@@ -20,11 +20,14 @@
             <span class="hamburger__line"></span>
           </label>
           <div class="js-header-nav navbar__nav navbar__nav_collapse nav">
-            <a class="nav__link" href="#hello">привет</a>
-            <a class="nav__link" href="#about">обо-мне</a>
-            <a class="nav__link" href="#projects">проекты</a>
-            <a class="nav__link nav__link_push_right" href="#contacts">
-              контакты
+            <a class="js-convert-title nav__link" href="#hello">Привет</a>
+            <a class="js-convert-title nav__link" href="#about">Обо мне</a>
+            <a class="js-convert-title nav__link" href="#projects">Проекты</a>
+            <a
+              class="js-convert-title nav__link nav__link_push_right"
+              href="#contacts"
+            >
+              Контакты
             </a>
           </div>
         </nav>
@@ -45,7 +48,7 @@
         </section>
 
         <section class="js-section section section_2col" id="about">
-          <h2 class="text_hidden">Обо мне</h2>
+          <h2 class="js-convert-title text_hidden_pc h2">Обо мне</h2>
           <aside class="js-tabs-menu sidebar">
             <div class="side-menu">
               <input
@@ -404,11 +407,103 @@
         </section>
 
         <section class="js-section section section_2col" id="projects">
-          <h2>Проекты</h2>
+          <h2 class="js-convert-title text_hidden_pc h2">Проекты</h2>
+          <aside class="js-filter-menu sidebar">
+            <div class="side-menu">
+              <input
+                class="side-menu__toggle"
+                id="toggle-project"
+                type="checkbox"
+                checked
+              />
+              <label class="side-menu__title" for="toggle-project">
+                <i class="fa-solid fa-caret-right"></i>
+                Проекты
+              </label>
+              <div class="side-menu__list filter">
+                <div>
+                  <input class="filter__toggle" id="js" type="checkbox" />
+                  <label
+                    class="file filter__label"
+                    data-project-id="js"
+                    data-project-action="open"
+                    for="js"
+                  >
+                    <span>
+                      <i class="file__icon fa-brands fa-js-square"></i>
+                      Native JS
+                    </span>
+                  </label>
+                </div>
+                <div>
+                  <input class="filter__toggle" id="html" type="checkbox" />
+                  <label
+                    class="file filter__label"
+                    data-project-id="html"
+                    data-project-action="open"
+                    for="html"
+                  >
+                    <span>
+                      <i class="file__icon fa-brands fa-html5"></i>
+                      HTML
+                    </span>
+                  </label>
+                </div>
+                <div>
+                  <input class="filter__toggle" id="scss" type="checkbox" />
+                  <label
+                    class="file filter__label"
+                    data-project-id="scss"
+                    data-project-action="open"
+                    for="scss"
+                  >
+                    <span>
+                      <i class="file__icon fa-brands fa-sass"></i>
+                      SCSS
+                    </span>
+                  </label>
+                </div>
+                <div>
+                  <input class="filter__toggle" id="php" type="checkbox" />
+                  <label
+                    class="file filter__label"
+                    data-project-id="php"
+                    data-project-action="open"
+                    for="php"
+                  >
+                    <span>
+                      <i class="file__icon fa-brands fa-php"></i>
+                      PHP
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div class="column">
+            <div class="tabs">
+              <input id="tab-projects" name="projects" type="radio" checked />
+              <label class="file tab__header tab_opened" for="tab-projects">
+                <span>
+                  <i class="file__icon fa-solid fa-code"></i>
+                  Все
+                  <span class="tab__close">
+                    <i
+                      class="fa-solid fa-xmark"
+                      data-tab-id="tab-projects"
+                      data-tab-action="clear"
+                    ></i>
+                  </span>
+                </span>
+              </label>
+              <div class="tab__content">
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="js-section section section_2col" id="contacts">
-          <h2>Контакты</h2>
+          <h2 class="h2">Контакты</h2>
         </section>
       </main>
 

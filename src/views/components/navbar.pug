@@ -1,0 +1,7 @@
+nav.navbar
+  a.navbar__logo(href='/')= common.site.name
+  input#menu-toggle.js-menu-toggle.menu-toggle(type='checkbox')
+  label.hamburger(for='menu-toggle')
+    span.hamburger__line
+
+  include ~Views/components/nav.pug

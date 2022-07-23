@@ -1,0 +1,43 @@
+/**
+ * File
+ */
+
+@use '~Styles/base/vars' as v;
+@use '~Styles/vendors/include-media' as *;
+@use '~Styles/base/placeholders';
+
+.file {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: fit-content;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: v.$menu-color;
+  background-color: v.$layout-bg-color;
+  cursor: pointer;
+
+  & > span {
+    position: relative;
+    display: block;
+    padding: 0.8rem;
+    background-color: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    @extend %transition;
+
+    @include media('>=#{v.$mobile-menu-breakpoint}') {
+      padding: 1rem;
+    }
+  }
+
+  &_active > span,
+  &:hover > span {
+    @extend %file-active;
+  }
+
+  &__icon {
+    width: 100%;
+    max-width: 2rem;
+  }
+}
