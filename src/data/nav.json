@@ -22,17 +22,36 @@
       }
     ]
   },
-  {
-    "url": "#about",
-    "text": "Обо мне"
-  },
-  {
-    "url": "#projects",
-    "text": "Проекты"
-  },
-  {
-    "url": "#contacts",
-    "text": "Контакты",
-    "isPushRight": true
+  "footer": {
+    "navClasses": [],
+    "itemClasses": ["nav__link_type_social"],
+    "items": [
+      {
+        "url": "https://t.me/YuriyLysyuk",
+        "name": "Аккаунт Юрия Лысюка в Telegram",
+        "classes": ["nav__link_type_social"],
+        "onlyIcon": true,
+        "iconClasses": ["fa-brands", "fa-telegram"],
+        "isTargetBlank": true,
+        "isNofollow": true
+      },
+      {
+        "url": "https://www.linkedin.com/in/YuriyLysyuk",
+        "name": "Профиль Юрия Лысюка на LinkedIn",
+        "classes": ["nav__link_type_social"],
+        "onlyIcon": true,
+        "iconClasses": ["fa-brands", "fa-linkedin"],
+        "isTargetBlank": true,
+        "isNofollow": true
+      },
+      {
+        "url": "https://github.com/YuriyLysyuk",
+        "name": "@YuriyLysyuk",
+        "classes": ["nav__link_type_social", "nav__link_push_right"],
+        "iconClasses": ["fa-brands", "fa-github"],
+        "isTargetBlank": true,
+        "isNofollow": true
+      }
+    ]
   }
 }
