@@ -1,5 +1,6 @@
 extends ~Views/layouts/default.pug
 
+include ~Views/components/nav.pug
 include ~Views/components/side-menu
 include ~Views/components/tabs
 
@@ -16,7 +17,12 @@ block append script
 
 block content
   header.header
-    include ~Views/components/navbar.pug
+    nav.navbar
+      a.navbar__logo(href='/')= common.site.name
+      input#menu-toggle.js-menu-toggle.menu-toggle(type='checkbox')
+      label.hamburger(for='menu-toggle')
+        span.hamburger__line
+      +nav('header')
 
   main.js-main.main 
     section#hello.js-section.section.section_wide.hello

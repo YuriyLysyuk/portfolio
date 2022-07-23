@@ -1,10 +1,23 @@
--
-  const nav = require('~Data/nav.json');
-  const defaultClasses = ['js-convert-title', 'nav__link'];
+mixin nav(position)
+  -
+    const navs = require('~Data/nav.json');
+    const {navClasses, defaultItemClasses, items} = navs[position];
 
-mixin navLink(data)
-  a(class=defaultClasses, class={ nav__link_push_right: data.isPushRight }, href=data.url)= data.text
+  .nav.navbar__nav(class=navClasses)
+    each item in items
+      +navLink(defaultItemClasses, item)
 
-.js-header-nav.nav.navbar__nav.navbar__nav_collapse
-  each navItem in nav
-    +navLink(navItem)
+mixin navLink(defaultItemClasses, item)
+  a.nav__link(
+    class=defaultItemClasses,
+    class=item.classes,
+    href=item.url,
+    target=item.isTargetBlank ? '_blank' : '_self',
+    rel=item.isNofollow ? 'nofollow' : 'follow',
+    title=item.name
+  )
+    unless item.onlyIcon
+      span= item.name
+
+    if item.iconClasses
+      i(class=item.iconClasses)

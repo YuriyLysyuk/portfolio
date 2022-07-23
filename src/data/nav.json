@@ -1,7 +1,26 @@
-[
-  {
-    "url": "#hello",
-    "text": "Привет"
+{
+  "header": {
+    "navClasses": ["js-header-nav", "navbar__nav_collapse"],
+    "defaultItemClasses": ["js-convert-title"],
+    "items": [
+      {
+        "url": "#hello",
+        "name": "Привет"
+      },
+      {
+        "url": "#about",
+        "name": "Обо мне"
+      },
+      {
+        "url": "#projects",
+        "name": "Проекты"
+      },
+      {
+        "url": "#contacts",
+        "name": "Контакты",
+        "itemClasses": ["nav__link_push_right"]
+      }
+    ]
   },
   {
     "url": "#about",
@@ -16,4 +35,4 @@
     "text": "Контакты",
     "isPushRight": true
   }
-]
+}
