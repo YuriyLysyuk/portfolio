@@ -8,13 +8,24 @@ mixin nav(position)
       +navLink(defaultItemClasses, item)
 
 mixin navLink(defaultItemClasses, item)
+  -
+    function replaceContact(data = '') {
+      return data.replace(/#{(\w+)-(\w+)}/gim, (match, contact, prop) => {
+        return common.contacts[contact][prop] || data;
+      });
+    };
+
+    item.link = replaceContact(item.link)
+    item.title = replaceContact(item.title)
+    item.name = replaceContact(item.name)
+
   a.nav__link(
     class=defaultItemClasses,
     class=item.classes,
     href=item.link,
     target=item.isTargetBlank ? '_blank' : '_self',
     rel=item.isNofollow ? 'nofollow' : 'follow',
-    title=item.name
+    title=item.title
   )
     unless item.onlyIcon
       span= item.name

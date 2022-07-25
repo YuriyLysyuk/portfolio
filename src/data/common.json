@@ -5,10 +5,23 @@
   "contacts": {
     "github": {
       "link": "https://github.com/YuriyLysyuk",
-      "name": "@YuriyLysyuk"
+      "name": "@YuriyLysyuk",
+      "title": "Профиль Лысюка Юрия на GitHub"
     },
     "codewars": {
-      "link": "https://www.codewars.com/users/YuriyLysyuk"
+      "link": "https://www.codewars.com/users/YuriyLysyuk",
+      "name": "@YuriyLysyuk",
+      "title": "Профиль Лысюка Юрия на Codewars"
+    },
+    "linkedin": {
+      "link": "https://www.linkedin.com/in/YuriyLysyuk",
+      "name": "@YuriyLysyuk",
+      "title": "Профиль Лысюка Юрия на LinkedIn"
+    },
+    "telegram": {
+      "link": "https://t.me/YuriyLysyuk",
+      "name": "@YuriyLysyuk",
+      "title": "Аккаунт Лысюка Юрия в Telegram"
     }
   }
 }

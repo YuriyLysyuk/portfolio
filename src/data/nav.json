@@ -27,8 +27,9 @@
     "itemClasses": ["nav__link_type_social"],
     "items": [
       {
-        "link": "https://t.me/YuriyLysyuk",
-        "name": "Аккаунт Юрия Лысюка в Telegram",
+        "link": "#{telegram-link}",
+        "name": "#{telegram-name}",
+        "title": "#{telegram-title}",
         "classes": ["nav__link_type_social"],
         "onlyIcon": true,
         "iconClasses": ["fa-brands", "fa-telegram"],
@@ -36,8 +37,9 @@
         "isNofollow": true
       },
       {
-        "link": "https://www.linkedin.com/in/YuriyLysyuk",
-        "name": "Профиль Юрия Лысюка на LinkedIn",
+        "link": "#{linkedin-link}",
+        "name": "#{linkedin-name}",
+        "title": "#{linkedin-title}",
         "classes": ["nav__link_type_social"],
         "onlyIcon": true,
         "iconClasses": ["fa-brands", "fa-linkedin"],
@@ -45,8 +47,9 @@
         "isNofollow": true
       },
       {
-        "url": "https://github.com/YuriyLysyuk",
-        "name": "@YuriyLysyuk",
+        "link": "#{github-link}",
+        "name": "#{github-name}",
+        "title": "#{github-title}",
         "classes": ["nav__link_type_social", "nav__link_push_right"],
         "iconClasses": ["fa-brands", "fa-github"],
         "isTargetBlank": true,
