@@ -1,0 +1,9 @@
+mixin replaceContactData(content)
+  -
+    function replaceContactData(content) {
+      return content.replace(/#{(\w+)}/gim, (match, v) => {
+        return common.contacts[v].link;
+      });
+    };
+
+  | #{ replaceContactData(content) }

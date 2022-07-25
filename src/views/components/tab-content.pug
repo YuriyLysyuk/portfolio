@@ -1,4 +1,7 @@
+include ~Views/helpers/replaceContactData
+
 mixin tab-content(content)
   .tab__content
     pre
-      code.js-code= content
+      code.js-code
+        +replaceContactData(content)
