@@ -1,10 +1,10 @@
-include ~Views/content/content
+include ~Views/components/tab-content
 
-mixin tabs(tabsMenu)
+mixin tabs(tabGroups)
   .js-tabs.tabs
-    each tabMenu in tabsMenu
-      each tab in tabMenu.list
-        - const { id, name, order, iconClasses, isLock, isChecked } = tab;
+    each tabGroup in tabGroups
+      each tab in tabGroup.list
+        - const { id, name, order, iconClasses, isLock, isChecked, content } = tab;
 
         input(id=`tab-${order}-${id}`, name='tabs', type='radio', checked=isChecked)
 
@@ -26,5 +26,4 @@ mixin tabs(tabsMenu)
                   data-tab-action='close'
                 )
 
-        .tab__content
-          +content(tab.id)
+        +tab-content(content)
