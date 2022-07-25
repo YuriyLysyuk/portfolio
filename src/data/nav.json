@@ -4,19 +4,19 @@
     "defaultItemClasses": ["js-convert-title"],
     "items": [
       {
-        "url": "#hello",
+        "link": "#hello",
         "name": "Привет"
       },
       {
-        "url": "#about",
+        "link": "#about",
         "name": "Обо мне"
       },
       {
-        "url": "#projects",
+        "link": "#projects",
         "name": "Проекты"
       },
       {
-        "url": "#contacts",
+        "link": "#contacts",
         "name": "Контакты",
         "itemClasses": ["nav__link_push_right"]
       }
@@ -27,7 +27,7 @@
     "itemClasses": ["nav__link_type_social"],
     "items": [
       {
-        "url": "https://t.me/YuriyLysyuk",
+        "link": "https://t.me/YuriyLysyuk",
         "name": "Аккаунт Юрия Лысюка в Telegram",
         "classes": ["nav__link_type_social"],
         "onlyIcon": true,
@@ -36,7 +36,7 @@
         "isNofollow": true
       },
       {
-        "url": "https://www.linkedin.com/in/YuriyLysyuk",
+        "link": "https://www.linkedin.com/in/YuriyLysyuk",
         "name": "Профиль Юрия Лысюка на LinkedIn",
         "classes": ["nav__link_type_social"],
         "onlyIcon": true,

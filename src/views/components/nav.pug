@@ -11,7 +11,7 @@ mixin navLink(defaultItemClasses, item)
   a.nav__link(
     class=defaultItemClasses,
     class=item.classes,
-    href=item.url,
+    href=item.link,
     target=item.isTargetBlank ? '_blank' : '_self',
     rel=item.isNofollow ? 'nofollow' : 'follow',
     title=item.name
