@@ -3,6 +3,7 @@
     {
       "id": "about",
       "name": "Обо мне",
+      "type": "tabs",
       "isChecked": true,
       "list": [
         {
@@ -40,6 +41,7 @@
     {
       "id": "examples",
       "name": "Примеры кода",
+      "type": "tabs",
       "list": [
         {
           "id": "count-characters",

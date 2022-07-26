@@ -1,10 +1,10 @@
-include ~Views/components/side-menu-list
+include ~Views/components/side-menu-tab-list
 
 mixin side-menus(sideMenus)
   each sideMenu in sideMenus
     +side-menu(sideMenu)
 
-mixin side-menu({id, name, isChecked, list})
+mixin side-menu({id, name, type, isChecked, list})
   .side-menu
     input.side-menu__toggle(id=`toggle-${id}`, type='checkbox', checked=isChecked)
 
