@@ -1,6 +1,7 @@
 {
   "tabGroups": [
     {
+      "id": "about",
       "name": "Обо мне",
       "isChecked": true,
       "list": [
