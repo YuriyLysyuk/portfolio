@@ -8,7 +8,7 @@ block variables
   -
     const common = require('~Data/common.json');
     const {head: {title, description}} = require('~Data/home.json');
-    const {tabGroups} = require('~Data/tab-groups.json');
+    const tabsAbout = require('~Data/tabs-about.json');
 
 block append style
   link(href=require('~Styles/home.scss'), rel='stylesheet')
@@ -39,7 +39,7 @@ block content
       h2.js-convert-title.h2.text_hidden_pc Обо мне
 
       aside.js-tabs-menu.sidebar
-        +side-menus(tabGroups)
+        +side-menus(tabsAbout)
 
         .side-menu
           input#toggle-contacts.side-menu__toggle(type='checkbox')
@@ -62,7 +62,8 @@ block content
                 | +7 (951) 979-07-55
 
       .column
-        +tabs(tabGroups)
+        +tabs-wrap(["js-tabs"])
+          +tab-groups(tabsAbout, 'tabs-about')
 
   footer.footer
     nav.navbar

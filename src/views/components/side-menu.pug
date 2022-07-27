@@ -4,7 +4,9 @@ mixin side-menus(sideMenus)
   each sideMenu in sideMenus
     +side-menu(sideMenu)
 
-mixin side-menu({id, name, type, isChecked, list})
+mixin side-menu(sideMenu)
+  - const { id, name, type, isChecked, items, filters } = sideMenu;
+
   .side-menu
     input.side-menu__toggle(id=`toggle-${id}`, type='checkbox', checked=isChecked)
 
@@ -13,4 +15,6 @@ mixin side-menu({id, name, type, isChecked, list})
       |
       | #{ name }
 
-    +side-menu-list(list)
+    case type
+      when 'tabs'
+        +side-menu-tab-list(items)
