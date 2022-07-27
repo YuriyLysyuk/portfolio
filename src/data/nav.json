@@ -18,7 +18,7 @@
       {
         "link": "#contacts",
         "name": "Контакты",
-        "itemClasses": ["nav__link_push_right"]
+        "classes": ["nav__link_push_right"]
       }
     ]
   },
