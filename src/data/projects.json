@@ -2,6 +2,7 @@
   "id": "projects",
   "name": "Проекты",
   "type": "filter",
+  "iconClasses": ["fa-solid", "fa-code"],
   "isChecked": true,
   "filters": [
     {

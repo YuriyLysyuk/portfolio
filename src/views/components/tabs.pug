@@ -12,10 +12,12 @@ mixin tab-list({items}, tabsRadioName)
   each item in items
     +tab(item, tabsRadioName)
 
-mixin tab(item, tabsRadioName, closeAction = 'close')
+mixin tab(item, tabsRadioName, tabName, closeAction)
   -
     const { id, name, order, iconClasses, isLock, isChecked, content } = item;
     const tabId = `tab${order ? '-' + order: ''}-${id}`;
+    tabName = tabName ? tabName : name;
+    closeAction = closeAction? closeAction : 'close';
 
   input(id=tabId, name=tabsRadioName, type='radio', checked=isChecked)
 
@@ -28,7 +30,7 @@ mixin tab(item, tabsRadioName, closeAction = 'close')
     span
       i.file__icon(class=iconClasses)
       |
-      | #{ name }
+      | #{ tabName }
 
       unless isLock
         span.tab__close
