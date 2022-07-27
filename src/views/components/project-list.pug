@@ -1,0 +1,11 @@
+mixin project-list(list)
+  .project
+    each project in list 
+      .project__item
+        h3.project__title #{ project.name }
+        .project__card
+          img.project__img(src=project.img)
+          .project__desc #{ project.description }
+          .buttons
+            a.button(href=project.demo, target='_blank', rel='nofollow') Демо
+            a.button(href=project.source, target='_blank', rel='nofollow') Код

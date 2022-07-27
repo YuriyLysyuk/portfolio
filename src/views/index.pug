@@ -3,12 +3,14 @@ extends ~Views/layouts/default
 include ~Views/components/nav
 include ~Views/components/side-menu
 include ~Views/components/tabs
+include ~Views/components/project-list
 
 block variables
   -
     const common = require('~Data/common.json');
     const {head: {title, description}} = require('~Data/home.json');
     const tabsAbout = require('~Data/tabs-about.json');
+    const projects = require('~Data/projects.json');
 
 block append style
   link(href=require('~Styles/home.scss'), rel='stylesheet')
@@ -64,6 +66,19 @@ block content
       .column
         +tabs-wrap(["js-tabs"])
           +tab-groups(tabsAbout, 'tabs-about')
+
+    section#projects.js-section.section.section_2col
+      h2.js-convert-title.h2.text_hidden_pc Проекты
+
+      aside.js-filter-menu.sidebar
+        +side-menu(projects)
+
+      .column
+        +tabs-wrap(["js-filters"])
+          +tab(projects, 'tab-projects', 'clear')
+
+          +tab-content-wrap
+            +project-list(projects.items)
 
   footer.footer
     nav.navbar

@@ -1,4 +1,5 @@
 include ~Views/components/side-menu-tab-list
+include ~Views/components/side-menu-filter-list
 
 mixin side-menus(sideMenus)
   each sideMenu in sideMenus
@@ -18,3 +19,5 @@ mixin side-menu(sideMenu)
     case type
       when 'tabs'
         +side-menu-tab-list(items)
+      when 'filter'
+        +side-menu-filter-list(filters)

@@ -1,0 +1,48 @@
+{
+  "id": "projects",
+  "name": "Проекты",
+  "type": "filter",
+  "isChecked": true,
+  "filters": [
+    {
+      "id": "js",
+      "name": "JavaScript",
+      "iconClasses": ["fa-brands", "fa-js-square"]
+    },
+    {
+      "id": "html",
+      "name": "HTML",
+      "iconClasses": ["fa-brands", "fa-html5"]
+    },
+    {
+      "id": "scss",
+      "name": "SCSS",
+      "iconClasses": ["fa-brands", "fa-sass"]
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "iconClasses": ["fa-brands", "fa-php"]
+    }
+  ],
+  "items": [
+    {
+      "id": "project-1",
+      "name": "Проект 1",
+      "description": "Описание проекта 1",
+      "img": "https://picsum.photos/id/1/370/145",
+      "demo": "https://google.com",
+      "source": "https://github.com",
+      "tags": ["html", "scss"]
+    },
+    {
+      "id": "project-2",
+      "name": "Проект 2",
+      "description": "Описание проекта 2",
+      "img": "https://picsum.photos/id/10/370/145",
+      "demo": "https://google.com",
+      "source": "https://github.com",
+      "tags": ["html", "js"]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+mixin side-menu-filter-list(filters)
+  .side-menu__list.filters
+    each filter in filters
+      - const { id, name, iconClasses } = filter;
+
+      div
+        input.filter__toggle(id=`filter-${id}`, type='checkbox')
+
+        label.file.filter__label(
+          data-filter-id=`filter-${id}`,
+          data-filter-action='open',
+          for=`filter-${id}`
+        )
+          span
+            i.file__icon(class=iconClasses)
+            |
+            | #{ name }
