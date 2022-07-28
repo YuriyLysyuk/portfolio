@@ -13,6 +13,7 @@ import { faCode } from '@fortawesome/free-solid-svg-icons/faCode';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons/faCaretRight';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone';
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons/faUpRightFromSquare';
 
 const icons = [
   faTelegram,
@@ -27,6 +28,7 @@ const icons = [
   faCaretRight,
   faEnvelope,
   faPhone,
+  faUpRightFromSquare,
 ];
 
 library.add(icons);
