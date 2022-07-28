@@ -4,16 +4,19 @@
 
 // Fonts
 $font-family: 'Fira Code', monospace;
-$font-family-title: 'Fira Code', monospace;
-
-$header-font: $font-family-title;
-$header-font-weight: 400;
+$font-family-vf: 'Fira Code VF', monospace;
 
 $body-font: $font-family;
 $body-font-weight: 400;
+$body-font-vf-weight: 450;
+
+$header-font: $font-family;
+$header-font-weight: 400;
+$header-font-vf-weight: 450;
 
 $code-font: $font-family;
 $code-font-weight: 400;
+$code-font-vf-weight: 450;
 
 // For REM / EM
 $basic-font-size: 62.5%;
