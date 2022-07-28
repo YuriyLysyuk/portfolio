@@ -68,6 +68,7 @@
     order: 2;
 
     pre code.hljs {
+      @extend %block-padding;
       border: 0;
       border-radius: 0;
     }
