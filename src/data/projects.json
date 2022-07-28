@@ -30,7 +30,7 @@
     {
       "id": "project-1",
       "name": "Проект 1",
-      "description": "Описание проекта 1",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
       "img": "https://picsum.photos/id/1/370/145",
       "demo": "https://google.com",
       "source": "https://github.com",
@@ -39,11 +39,47 @@
     {
       "id": "project-2",
       "name": "Проект 2",
-      "description": "Описание проекта 2",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
       "img": "https://picsum.photos/id/10/370/145",
       "demo": "https://google.com",
       "source": "https://github.com",
       "tags": ["html", "js"]
+    },
+    {
+      "id": "project-3",
+      "name": "Проект 3",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
+      "img": "https://picsum.photos/id/20/370/145",
+      "demo": "https://google.com",
+      "source": "https://github.com",
+      "tags": ["scss", "js"]
+    },
+    {
+      "id": "project-4",
+      "name": "Проект 4",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
+      "img": "https://picsum.photos/id/30/370/145",
+      "demo": "https://google.com",
+      "source": "https://github.com",
+      "tags": ["scss", "js"]
+    },
+    {
+      "id": "project-5",
+      "name": "Проект 5",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
+      "img": "https://picsum.photos/id/40/370/145",
+      "demo": "https://google.com",
+      "source": "https://github.com",
+      "tags": ["scss", "js"]
+    },
+    {
+      "id": "project-6",
+      "name": "Проект 6",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
+      "img": "https://picsum.photos/id/50/370/145",
+      "demo": "https://google.com",
+      "source": "https://github.com",
+      "tags": ["scss", "js"]
     }
   ]
 }

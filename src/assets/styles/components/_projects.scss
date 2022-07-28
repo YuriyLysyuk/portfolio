@@ -1,0 +1,58 @@
+/**
+ * Projects
+ */
+
+@use '~Styles/base/vars' as v;
+@use '~Styles/base/placeholders';
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: v.$gap-4x;
+  padding: 12rem;
+}
+
+.project {
+  &__title {
+    color: v.$blue;
+    font-weight: 700;
+
+    .comment {
+      font-weight: v.$body-font-weight;
+
+      @supports (font-variation-settings: normal) {
+        font-weight: v.$body-font-vf-weight;
+      }
+    }
+  }
+
+  &__card {
+    margin-top: 1.4rem;
+    background-color: v.$code-bg-color;
+    border: v.$border-width solid v.$border-color;
+    border-radius: v.$border-radius-2x;
+    overflow: hidden;
+  }
+
+  &__img {
+    min-width: 100%;
+    height: auto;
+  }
+
+  &__content {
+    padding: 3rem;
+
+    & > *:not(:first-child) {
+      margin-top: v.$gap-2x;
+    }
+  }
+
+  &__desc {
+    color: v.$inverted-text-color;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
