@@ -40,9 +40,9 @@ $gray: #ccc;
 $body-bg-color: #010c15;
 $layout-bg-color: #011627;
 $text-color: #e5e9f0;
-$inverted-text-color: $black;
+$inverted-text-color: #607b96;
 $code-bg-color: #011221;
-$menu-color: #607b96;
+$menu-color: $inverted-text-color;
 $menu-hover-color: $text-color;
 $accent-color: $orange;
 $border-color: #1e2d3d;
@@ -55,7 +55,6 @@ $button-primary-text-color: #01080e;
 $button-ghost-bg-color: transparent;
 $button-ghost-text-color: $text-color;
 $button-ghost-border-color: $text-color;
-
 
 // Margins, paddings, gaps, borders
 $gap: 1rem;
