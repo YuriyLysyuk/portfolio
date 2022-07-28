@@ -46,6 +46,16 @@ $menu-color: #607b96;
 $menu-hover-color: $text-color;
 $accent-color: $orange;
 $border-color: #1e2d3d;
+$button-default-bg-color: #1c2b3a;
+$button-default-bg-hover-color: #263b50;
+$button-default-text-color: $text-color;
+$button-primary-bg-color: $orange;
+$button-primary-bg-hover-color: #ffac6b;
+$button-primary-text-color: #01080e;
+$button-ghost-bg-color: transparent;
+$button-ghost-text-color: $text-color;
+$button-ghost-border-color: $text-color;
+
 
 // Margins, paddings, gaps, borders
 $gap: 1rem;
