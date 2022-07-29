@@ -15,8 +15,12 @@ mixin tab-list({items}, tabsRadioName)
 mixin tab(item, tabsRadioName, closeAction)
   -
     const { id, name, order, iconClasses, isLock, isChecked, content } = item;
-    const tabId = `tab${order ? '-' + order: ''}-${id}`;
-    closeAction = closeAction? closeAction : 'close';
+    const tabId = `tab${order ? '-' + order : ''}-${id}`;
+    const text = {
+      close: 'Закрыть',
+      clear: 'Очистить',
+    };
+    closeAction = closeAction ? closeAction : 'close';
 
   input(id=tabId, name=tabsRadioName, type='radio', checked=isChecked)
 
@@ -33,7 +37,11 @@ mixin tab(item, tabsRadioName, closeAction)
 
       unless isLock
         span.tab__close
-          i.fa-solid.fa-xmark(data-tab-id=tabId, data-tab-action=closeAction)
+          i.fa-solid.fa-xmark(
+            data-tab-id=tabId,
+            data-tab-action=closeAction,
+            title=text[closeAction]
+          )
 
   if (content)
     +tab-content-wrap
