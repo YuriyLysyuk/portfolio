@@ -84,8 +84,12 @@
 }
 
 [id^='tab']:checked + [class~='tab__header'] {
-  background-color: v.$code-bg-color;
+  background-color: transparent;
   @extend %file-active;
+
+  .tabs_view_code & {
+    background-color: v.$code-bg-color;
+  }
 }
 
 [id^='tab']:checked + [class~='tab__header']:before {
@@ -94,7 +98,11 @@
   left: 0;
   bottom: -(v.$border-width);
   width: 100%;
-  border-bottom: v.$border-width solid v.$code-bg-color;
+  border-bottom: v.$border-width solid v.$layout-bg-color;
+
+  .tabs_view_code & {
+    border-bottom-color: v.$code-bg-color;
+  }
 }
 
 [id^='tab']:checked + [class~='tab__header'] + [class~='tab__content'] {
