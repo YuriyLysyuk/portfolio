@@ -64,4 +64,9 @@
   & .code.hljs {
     background-color: transparent;
   }
+
+  &__icon {
+    height: 1.3em;
+    color: v.$accent-color;
+  }
 }
