@@ -6,6 +6,12 @@
   "isChecked": true,
   "filters": [
     {
+      "id": "all",
+      "name": "Все",
+      "iconClasses": ["fa-solid", "fa-globe"],
+      "isChecked": true
+    },
+    {
       "id": "js",
       "name": "JavaScript",
       "iconClasses": ["fa-brands", "fa-js-square"]
