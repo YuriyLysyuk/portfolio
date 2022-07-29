@@ -16,6 +16,11 @@
       "iconClasses": ["fa-brands", "fa-html5"]
     },
     {
+      "id": "pug",
+      "name": "Pug",
+      "iconClasses": ["fa-solid", "fa-dog"]
+    },
+    {
       "id": "scss",
       "name": "SCSS",
       "iconClasses": ["fa-brands", "fa-sass"]
