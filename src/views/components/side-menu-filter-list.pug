@@ -1,10 +1,15 @@
 mixin side-menu-filter-list(filters)
   .side-menu__list.filters
     each filter in filters
-      - const { id, name, iconClasses } = filter;
+      - const { id, name, iconClasses, isChecked } = filter;
 
       div
-        input.filter__toggle(id=`filter-${id}`, type='checkbox')
+        input.filter__toggle(
+          id=`filter-${id}`,
+          name='filters',
+          type='radio',
+          checked=isChecked
+        )
 
         label.file.filter__label(
           data-filter-id=`filter-${id}`,
