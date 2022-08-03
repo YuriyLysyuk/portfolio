@@ -6,13 +6,17 @@
 @use '~Styles/base/placeholders';
 
 .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: v.$gap-4x;
+  display: flex;
+  flex-wrap: wrap;
   padding: 12rem;
 }
 
 .project {
+  flex: 1;
+  min-width: 30rem;
+  max-width: 37rem;
+  margin: v.$gap-2x;
+
   &__title {
     color: v.$blue;
     font-weight: 700;
@@ -54,5 +58,9 @@
   &__buttons {
     display: flex;
     justify-content: space-between;
+  }
+
+  &_hidden {
+    display: none;
   }
 }
