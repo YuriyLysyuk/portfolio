@@ -4,19 +4,21 @@
 
 @use '~Styles/base/vars' as v;
 @use '~Styles/base/placeholders';
+@use '~Styles/vendors/include-media' as *;
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 12rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  @extend %block-padding;
+
+  @include media('>=lg') {
+    gap: 4rem;
+    padding: 12rem;
+  }
 }
 
 .project {
-  flex: 1;
-  min-width: 30rem;
-  max-width: 37rem;
-  margin: v.$gap-2x;
-
   &__title {
     color: v.$blue;
     font-weight: 700;

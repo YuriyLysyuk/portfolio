@@ -7,15 +7,12 @@ mixin side-menu-filter-list(filters)
         input.filter__toggle(
           id=`filter-${id}`,
           name='filters',
+          data-filter-id=id,
           type='radio',
           checked=isChecked
         )
 
-        label.file.filter__label(
-          data-filter-id=`filter-${id}`,
-          data-filter-action='open',
-          for=`filter-${id}`
-        )
+        label.file.filter__label(for=`filter-${id}`)
           span
             i.file__icon(class=iconClasses)
             |

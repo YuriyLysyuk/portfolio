@@ -31,9 +31,10 @@ mixin tab(item, tabsRadioName, closeAction)
     for=tabId
   )
     span
-      i.file__icon(class=iconClasses)
-      |
-      | #{ name }
+      span
+        i.file__icon(class=iconClasses)
+        |
+        | #{ name }
 
       unless isLock
         span.tab__close

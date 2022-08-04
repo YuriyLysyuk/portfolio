@@ -4,3 +4,4 @@ import './vendors/highlight';
 import './helpers/helpers';
 import './components/mobile-menu';
 import './components/tabs';
+import './components/filter';

@@ -1,7 +1,7 @@
 mixin project-list(list)
   .projects
     each project in list 
-      .project
+      .project(data-tags=project.tags.join())
         h3.project__title 
           | #{ project.name }
           |
