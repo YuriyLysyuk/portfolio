@@ -4,45 +4,39 @@
   "type": "filter",
   "iconClasses": ["fa-solid", "fa-globe"],
   "isChecked": true,
-  "filters": [
-    {
-      "id": "all",
+  "filters": {
+    "all": {
       "name": "Все",
       "iconClasses": ["fa-solid", "fa-globe"],
       "isChecked": true
     },
-    {
-      "id": "js",
+    "js": {
       "name": "JavaScript",
       "iconClasses": ["fa-brands", "fa-js-square"]
     },
-    {
-      "id": "html",
+    "html": {
       "name": "HTML",
       "iconClasses": ["fa-brands", "fa-html5"]
     },
-    {
-      "id": "pug",
+    "pug": {
       "name": "Pug",
       "iconClasses": ["fa-solid", "fa-dog"]
     },
-    {
-      "id": "scss",
+    "scss": {
       "name": "SCSS",
       "iconClasses": ["fa-brands", "fa-sass"]
     },
-    {
-      "id": "php",
+    "php": {
       "name": "PHP",
       "iconClasses": ["fa-brands", "fa-php"]
     }
-  ],
+  },
   "items": [
     {
       "id": "project-1",
       "name": "Проект 1",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
-      "img": "https://picsum.photos/id/1/370/145",
+      "img": "https://picsum.photos/id/1/620/243",
       "demo": "https://google.com",
       "source": "https://github.com",
       "tags": ["html", "scss"]
@@ -51,25 +45,25 @@
       "id": "project-2",
       "name": "Проект 2",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
-      "img": "https://picsum.photos/id/10/370/145",
-      "demo": "https://google.com",
-      "source": "https://github.com",
-      "tags": ["html", "js"]
-    },
-    {
-      "id": "project-3",
-      "name": "Проект 3",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
-      "img": "https://picsum.photos/id/20/370/145",
+      "img": "https://picsum.photos/id/10/620/243",
       "demo": "https://google.com",
       "source": "https://github.com",
       "tags": ["scss", "js"]
     },
     {
+      "id": "project-3",
+      "name": "Проект 3",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
+      "img": "https://picsum.photos/id/20/620/243",
+      "demo": "https://google.com",
+      "source": "https://github.com",
+      "tags": ["pug", "scss", "js"]
+    },
+    {
       "id": "project-4",
       "name": "Проект 4",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
-      "img": "https://picsum.photos/id/30/370/145",
+      "img": "https://picsum.photos/id/30/620/243",
       "demo": "https://google.com",
       "source": "https://github.com",
       "tags": ["scss", "js"]
@@ -78,7 +72,7 @@
       "id": "project-5",
       "name": "Проект 5",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
-      "img": "https://picsum.photos/id/40/370/145",
+      "img": "https://picsum.photos/id/40/620/243",
       "demo": "https://google.com",
       "source": "https://github.com",
       "tags": ["scss", "js"]
@@ -87,10 +81,10 @@
       "id": "project-6",
       "name": "Проект 6",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
-      "img": "https://picsum.photos/id/50/370/145",
+      "img": "https://picsum.photos/id/50/620/243",
       "demo": "https://google.com",
       "source": "https://github.com",
-      "tags": ["scss", "js"]
+      "tags": ["scss", "js", "php"]
     }
   ]
 }

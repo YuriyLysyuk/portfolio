@@ -10,6 +10,11 @@ mixin project-list(list)
         .project__card
           img.project__img(src=project.img)
 
+          .project__tags
+            each tag in project.tags
+              .project__tag(class=`project__tag_${tag}`)
+                i(class=projects.filters[tag].iconClasses)
+
           .project__content
             .project__desc #{ project.description }
 

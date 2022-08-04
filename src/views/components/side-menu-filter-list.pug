@@ -1,7 +1,7 @@
 mixin side-menu-filter-list(filters)
   .side-menu__list.filters
-    each filter in filters
-      - const { id, name, iconClasses, isChecked } = filter;
+    each filter, id in filters
+      - const { name, iconClasses, isChecked } = filter;
 
       div
         input.filter__toggle(

@@ -35,6 +35,7 @@
   }
 
   &__card {
+    position: relative;
     margin-top: 1.4rem;
     background-color: v.$code-bg-color;
     border: v.$border-width solid v.$border-color;
@@ -45,6 +46,45 @@
   &__img {
     min-width: 100%;
     height: auto;
+  }
+
+  &__tags {
+    position: absolute;
+    top: 1.7rem;
+    right: 1.7rem;
+    display: flex;
+  }
+
+  &__tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-left: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+
+    &_js {
+      color: v.$text-dark-color;
+      background-color: #f7df1e;
+    }
+    &_html {
+      color: v.$text-color;
+      background-color: #e34f26;
+    }
+    &_pug {
+      color: v.$text-color;
+      background-color: #a86454;
+    }
+    &_scss {
+      color: v.$text-color;
+      background-color: #bf4080;
+    }
+    &_php {
+      color: v.$text-dark-color;
+      background-color: #8892be;
+    }
   }
 
   &__content {
