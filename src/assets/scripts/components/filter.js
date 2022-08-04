@@ -42,7 +42,7 @@ function onClearFilterButtonClick(event) {
   clearFilter();
 }
 
-function filterProjects(filterId) {
+function filterProjects(filterId = 'all') {
   projectNodes.forEach((projectNode) => {
     const projectTags = projectNode.dataset.tags.split(',');
 
@@ -62,5 +62,6 @@ function clearFilter() {
   if (filterRadioNodes[0].checked === true) return;
 
   filterRadioNodes[0].checked = true;
+  filterProjects();
   setTabName();
 }
