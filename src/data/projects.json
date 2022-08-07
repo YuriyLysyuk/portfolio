@@ -33,6 +33,15 @@
   },
   "items": [
     {
+      "id": "portfolio",
+      "name": "Портфолио",
+      "description": "Лендинг-портфолио в стиле редактора кода",
+      "img": "portfolio.jpg",
+      "demo": "https://YuriyLysyuk.ru",
+      "source": "https://github.com/YuriyLysyuk/portfolio",
+      "tags": ["js", "html", "scss", "pug"]
+    },
+    {
       "id": "rko-guru",
       "name": "РКО Гуру",
       "description": "Калькулятор стоимости обслуживания расчетного счета по тарифам разных банков для ИП и ООО",
