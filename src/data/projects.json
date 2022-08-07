@@ -41,49 +41,13 @@
       "tags": ["js", "html", "scss", "php"]
     },
     {
-      "id": "project-2",
-      "name": "Проект 2",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
-      "img": "https://picsum.photos/id/10/620/243",
-      "demo": "https://google.com",
-      "source": "https://github.com",
-      "tags": ["scss", "js"]
-    },
-    {
-      "id": "project-3",
-      "name": "Проект 3",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
-      "img": "https://picsum.photos/id/20/620/243",
-      "demo": "https://google.com",
-      "source": "https://github.com",
-      "tags": ["pug", "scss", "js"]
-    },
-    {
-      "id": "project-4",
-      "name": "Проект 4",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
-      "img": "https://picsum.photos/id/30/620/243",
-      "demo": "https://google.com",
-      "source": "https://github.com",
-      "tags": ["scss", "js"]
-    },
-    {
-      "id": "project-5",
-      "name": "Проект 5",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
-      "img": "https://picsum.photos/id/40/620/243",
-      "demo": "https://google.com",
-      "source": "https://github.com",
-      "tags": ["scss", "js"]
-    },
-    {
-      "id": "project-6",
-      "name": "Проект 6",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
-      "img": "https://picsum.photos/id/50/620/243",
-      "demo": "https://google.com",
-      "source": "https://github.com",
-      "tags": ["scss", "js", "php"]
+      "id": "myseahomes-marketing",
+      "name": "Лендинг",
+      "description": "Лендинг для отдела маркетинга сайта myseahomes.com",
+      "img": "myseahomes-marketing.jpg",
+      "demo": "https://myseahomes.com/boost/",
+      "source": "https://github.com/YuriyLysyuk/myseahomes-marketing",
+      "tags": ["html", "scss", "php"]
     }
   ]
 }
