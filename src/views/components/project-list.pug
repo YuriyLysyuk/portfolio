@@ -8,31 +8,36 @@ mixin project-list(list)
           span.comment.text_size_smaller #{ project.id }
 
         .project__card
-          img.project__img(src=project.img)
+          img.project__img(src=require(`~Images/${project.img}`))
 
           .project__tags
             each tag in project.tags
               .project__tag(class=`project__tag_${tag}`)
-                i(class=projects.filters[tag].iconClasses)
+                i(
+                  class=projects.filters[tag].iconClasses,
+                  title=projects.filters[tag].name
+                )
 
           .project__content
             .project__desc #{ project.description }
 
             .project__buttons
-              a.button.button_default(
-                href=project.demo,
-                target='_blank',
-                rel='nofollow'
-              ) 
-                i.fa-solid.fa-up-right-from-square
-                |
-                | Live
+              if project.demo
+                a.button.button_default(
+                  href=project.demo,
+                  target='_blank',
+                  rel='nofollow'
+                ) 
+                  i.fa-solid.fa-up-right-from-square
+                  |
+                  | Live
 
-              a.button.button_default(
-                href=project.source,
-                target='_blank',
-                rel='nofollow'
-              ) 
-                i.fa-brands.fa-github
-                |
-                | Source
+              if project.source
+                a.button.button_default(
+                  href=project.source,
+                  target='_blank',
+                  rel='nofollow'
+                ) 
+                  i.fa-brands.fa-github
+                  |
+                  | Source
