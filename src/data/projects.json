@@ -51,7 +51,7 @@
     },
     {
       "id": "elektro-spektr",
-      "name": "Тема WordPress",
+      "name": "Электро спектр",
       "description": "WordPress тема для сайта-каталога кабельного завода",
       "img": "elektro-spektr.jpg",
       "demo": "https://elektro-spektr.ru/",
@@ -60,7 +60,7 @@
     },
     {
       "id": "myseahomes-marketing",
-      "name": "Лендинг",
+      "name": "Myseahomes",
       "description": "Лендинг для отдела маркетинга сайта myseahomes.com",
       "img": "myseahomes-marketing.jpg",
       "demo": "https://myseahomes.com/boost/",
