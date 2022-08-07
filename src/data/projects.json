@@ -41,6 +41,15 @@
       "tags": ["js", "html", "scss", "php"]
     },
     {
+      "id": "elektro-spektr",
+      "name": "Тема WordPress",
+      "description": "WordPress тема для сайта-каталога кабельного завода",
+      "img": "elektro-spektr.jpg",
+      "demo": "https://elektro-spektr.ru/",
+      "source": "https://github.com/YuriyLysyuk/elektro-spektr",
+      "tags": ["html", "scss", "php"]
+    },
+    {
       "id": "myseahomes-marketing",
       "name": "Лендинг",
       "description": "Лендинг для отдела маркетинга сайта myseahomes.com",
