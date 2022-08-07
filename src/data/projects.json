@@ -33,13 +33,12 @@
   },
   "items": [
     {
-      "id": "project-1",
-      "name": "Проект 1",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in, nulla rerum, quod beatae.",
-      "img": "https://picsum.photos/id/1/620/243",
-      "demo": "https://google.com",
-      "source": "https://github.com",
-      "tags": ["html", "scss"]
+      "id": "rko_guru",
+      "name": "РКО Гуру",
+      "description": "Калькулятор стоимости обслуживания расчетного счета по тарифам разных банков для ИП и ООО",
+      "img": "rko-guru.jpg",
+      "demo": "https://rko.guru",
+      "tags": ["js", "html", "scss", "php"]
     },
     {
       "id": "project-2",
