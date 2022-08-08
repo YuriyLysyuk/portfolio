@@ -8,9 +8,13 @@
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
   @extend %block-padding;
+
+  @include media('>=sm') {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
 
   @include media('>=lg') {
     gap: 4rem;
@@ -21,7 +25,11 @@
 .project {
   display: flex;
   flex-direction: column;
-  max-width: 37rem;
+  max-width: 100%;
+
+  @include media('>=sm') {
+    max-width: 37rem;
+  }
 
   &__title {
     color: v.$blue;
@@ -110,7 +118,20 @@
 
   &__buttons {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
+    & > *:not(:first-child) {
+      margin-top: v.$gap;
+    }
+
+    @include media('>=xs') {
+      flex-direction: row;
+      justify-content: space-between;
+
+      & > *:not(:first-child) {
+        margin-top: 0;
+      }
+    }
   }
 
   &_hidden {
