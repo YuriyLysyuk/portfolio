@@ -11,7 +11,7 @@ mixin navLink(defaultItemClasses, item)
   -
     function replaceContact(data = '') {
       return data.replace(/#{(\w+)-(\w+)}/gim, (match, contact, prop) => {
-        return common.contacts[contact][prop] || data;
+        return contacts.items[contact][prop] || data;
       });
     };
 

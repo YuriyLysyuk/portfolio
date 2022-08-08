@@ -11,6 +11,7 @@ block variables
     const {head: {title, description}} = require('~Data/home.json');
     const tabsAbout = require('~Data/tabs-about.json');
     const projects = require('~Data/projects.json');
+    const contacts = require('~Data/contacts.json');
 
 block append style
   link(href=require('~Styles/home.scss'), rel='stylesheet')
@@ -39,7 +40,7 @@ block content
       hr.hr_invisible.hello__hr
       p.comment.text_size_smaller Посетите мою страничку на GitHub
       p.js-code.code.text_size_smaller.
-        const githubLink = '#{ common.contacts.github.link }';
+        const githubLink = '#{ contacts.items.github.link }';
       p.comment.text_size_smaller или скачайте резюме
       p.js-code.code.text_size_smaller.
         const cvLink = 'https://YuriyLysyuk.ru/YuriyLysyukCV.pdf';
