@@ -50,26 +50,6 @@ block content
       aside.js-tabs-menu.sidebar
         +side-menus(tabsAbout)
 
-        .side-menu
-          input#toggle-contacts.side-menu__toggle(type='checkbox')
-          label.side-menu__title(for='toggle-contacts')
-            i.fa-solid.fa-caret-right
-            |
-            | Контакты
-
-          .side-menu__list
-            a.file(href='mailto:work@YuriyLysyuk.ru')
-              span
-                i.fa-solid.fa-envelope
-                |
-                | work@YuriyLysyuk.ru
-
-            a.file(href='tel:+79519790755')
-              span
-                i.fa-solid.fa-phone
-                |
-                | +7 (951) 979-07-55
-
       .column
         +tabs-wrap(["js-tabs", "tabs_view_code"])
           +tab-groups(tabsAbout, 'tabs-about')
@@ -86,6 +66,12 @@ block content
 
           +tab-content-wrap
             +project-list(projects.items)
+
+    section#contacts.js-section.section.section_2col
+      h2.js-convert-title.h2.text_hidden_pc Контакты
+
+      aside.sidebar
+        +side-menu(contacts)
 
   footer.footer
     nav.navbar
