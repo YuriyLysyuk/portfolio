@@ -39,7 +39,7 @@
       "img": "portfolio.jpg",
       "demo": "https://YuriyLysyuk.ru",
       "source": "https://github.com/YuriyLysyuk/portfolio",
-      "tags": ["js", "html", "scss", "pug"]
+      "tags": ["js", "pug", "scss"]
     },
     {
       "id": "rko-guru",
