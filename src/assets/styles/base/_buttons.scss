@@ -17,7 +17,8 @@
     background-color: v.$button-default-bg-color;
     border: v.$border-width solid v.$button-default-bg-color;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: v.$button-default-bg-hover-color;
     }
   }
@@ -27,7 +28,8 @@
     background-color: v.$button-primary-bg-color;
     border: v.$border-width solid v.$button-primary-bg-color;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: v.$button-primary-bg-hover-color;
     }
   }
@@ -37,7 +39,8 @@
     background-color: v.$button-ghost-bg-color;
     border: v.$border-width solid v.$button-ghost-border-color;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: rgba(v.$button-ghost-border-color, 0.5);
     }
   }
