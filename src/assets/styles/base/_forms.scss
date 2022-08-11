@@ -1,0 +1,39 @@
+/**
+ * Forms
+ */
+
+@use '~Styles/base/vars' as v;
+@use '~Styles/base/placeholders';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  max-width: 37rem;
+  margin: auto 0;
+
+  &__label {
+    margin-bottom: v.$gap;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: v.$inverted-text-color;
+  }
+
+  &__control {
+    width: 100%;
+    margin-bottom: v.$gap-2x;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: v.$inverted-text-color;
+    background-color: v.$code-bg-color;
+    border: v.$border-width solid v.$border-color;
+    border-radius: v.$border-radius;
+    @extend %transition;
+
+    &:focus {
+      border-color: v.$border-focus-color;
+    }
+  }
+}
