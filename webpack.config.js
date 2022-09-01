@@ -98,6 +98,13 @@ module.exports = (env, argv) => {
 
         // favicons
         {
+          test: /\.(png|svg|ico|xml|webmanifest)$/i,
+          type: 'asset/resource',
+          include: /assets\/favicons/,
+          generator: {
+            filename: '[name][ext]',
+          },
+        },
       ],
     },
 
