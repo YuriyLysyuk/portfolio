@@ -32,6 +32,7 @@ module.exports = (env, argv) => {
         Styles: path.join(__dirname, 'src/assets/styles/'),
         Scripts: path.join(__dirname, 'src/assets/scripts/'),
         Data: path.join(__dirname, 'src/data/'),
+        Analytics: path.join(__dirname, 'src/analytics/'),
       },
     },
 
