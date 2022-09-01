@@ -44,7 +44,7 @@
   @extend %file-active;
 
   &:before {
-    content: '\2022';
+    content: '•';
     color: v.$text-color;
     background-color: v.$inverted-text-color;
     border-color: v.$inverted-text-color;
