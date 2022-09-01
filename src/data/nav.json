@@ -1,19 +1,60 @@
-[
-  {
-    "url": "#hello",
-    "text": "Привет"
+{
+  "header": {
+    "navClasses": ["js-header-nav", "navbar__nav_collapse"],
+    "defaultItemClasses": ["js-convert-title"],
+    "items": [
+      {
+        "link": "#hello",
+        "name": "Привет"
+      },
+      {
+        "link": "#about",
+        "name": "Обо мне"
+      },
+      {
+        "link": "#projects",
+        "name": "Проекты"
+      },
+      {
+        "link": "#projects",
+        "name": "Контакты",
+        "classes": ["nav__link_push_right"]
+      }
+    ]
   },
-  {
-    "url": "#about",
-    "text": "Обо мне"
-  },
-  {
-    "url": "#projects",
-    "text": "Проекты"
-  },
-  {
-    "url": "#contacts",
-    "text": "Контакты",
-    "isPushRight": true
+  "footer": {
+    "navClasses": [],
+    "itemClasses": ["nav__link_type_social"],
+    "items": [
+      {
+        "link": "#{telegram-link}",
+        "name": "#{telegram-name}",
+        "title": "#{telegram-title}",
+        "classes": ["nav__link_type_social"],
+        "onlyIcon": true,
+        "iconClasses": ["fa-brands", "fa-telegram"],
+        "isTargetBlank": true,
+        "isNofollow": true
+      },
+      {
+        "link": "#{linkedin-link}",
+        "name": "#{linkedin-name}",
+        "title": "#{linkedin-title}",
+        "classes": ["nav__link_type_social"],
+        "onlyIcon": true,
+        "iconClasses": ["fa-brands", "fa-linkedin"],
+        "isTargetBlank": true,
+        "isNofollow": true
+      },
+      {
+        "link": "#{github-link}",
+        "name": "#{github-name}",
+        "title": "#{github-title}",
+        "classes": ["nav__link_type_social", "nav__link_push_right"],
+        "iconClasses": ["fa-brands", "fa-github"],
+        "isTargetBlank": true,
+        "isNofollow": true
+      }
+    ]
   }
-]
+}

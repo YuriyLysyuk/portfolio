@@ -15,10 +15,6 @@ body {
   @include media('>=sm') {
     padding: 3rem;
   }
-
-  @include media('>=xxl') {
-    padding: 7rem;
-  }
 }
 
 .container {
@@ -36,7 +32,6 @@ body {
 .footer {
   font-size: 1.6rem;
   line-height: 2.1rem;
-  font-weight: 500;
 }
 
 .main {

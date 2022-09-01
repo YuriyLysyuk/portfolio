@@ -9,6 +9,11 @@ code {
   font-family: v.$code-font;
   font-weight: v.$code-font-weight;
 
+  @supports (font-variation-settings: normal) {
+    font-family: v.$font-family-vf;
+    font-weight: v.$code-font-vf-weight;
+  }
+
   &.hljs {
     pre & {
       background: v.$code-bg-color;

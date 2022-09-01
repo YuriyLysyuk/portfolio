@@ -1,30 +1,58 @@
-include ~Views/content/content
+include ~Views/helpers/replaceContactData
 
-mixin tabs(tabsMenu)
-  .js-tabs.tabs
-    each tabMenu in tabsMenu
-      each tab in tabMenu.list
-        - const { id, name, order, iconClasses, isLock, isChecked } = tab;
+mixin tabs-wrap(classes)
+  .tabs(class=classes)
+    block
 
-        input(id=`tab-${order}-${id}`, name='tabs', type='radio', checked=isChecked)
+mixin tab-groups(tabGroups, tabsRadioName)
+  each tabGroup in tabGroups
+    +tab-list(tabGroup, tabsRadioName)
 
-        label.file.tab__header(
-          class=isChecked ? 'tab_opened' : '',
-          data-tab-id=`tab-${order}-${id}`,
-          data-tab-action='open',
-          for=`tab-${order}-${id}`
-        )
-          span
-            i.file__icon(class=iconClasses)
-            |
-            | #{ name }
+mixin tab-list({items}, tabsRadioName)
+  each item in items
+    +tab(item, tabsRadioName)
 
-            unless isLock
-              span.tab__close
-                i.fa-solid.fa-xmark(
-                  data-tab-id=`tab-${order}-${id}`,
-                  data-tab-action='close'
-                )
+mixin tab(item, tabsRadioName, closeAction)
+  -
+    const { id, name, order, iconClasses, isLock, isChecked, content } = item;
+    const tabId = `tab${order ? '-' + order : ''}-${id}`;
+    const text = {
+      close: 'Закрыть',
+      clear: 'Очистить',
+    };
+    closeAction = closeAction ? closeAction : 'close';
 
-        .tab__content
-          +content(tab.id)
+  input(id=tabId, name=tabsRadioName, type='radio', checked=isChecked)
+
+  label.file.tab__header(
+    class=isChecked ? 'tab_opened' : '',
+    data-tab-id=tabId,
+    data-tab-action='open',
+    for=tabId
+  )
+    span
+      span
+        i.file__icon(class=iconClasses)
+        |
+        | #{ name }
+
+      unless isLock
+        span.tab__close
+          i.fa-solid.fa-xmark(
+            data-tab-id=tabId,
+            data-tab-action=closeAction,
+            title=text[closeAction]
+          )
+
+  if (content)
+    +tab-content-wrap
+      +tab-content(content)
+
+mixin tab-content-wrap(content)
+  .tab__content
+    block
+
+mixin tab-content(content)
+  pre
+    code.js-code
+      +replaceContactData(content)

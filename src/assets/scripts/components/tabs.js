@@ -3,7 +3,7 @@
 // UI
 const tabsMenuNode = document.querySelector('.js-tabs-menu');
 const tabsNode = document.querySelector('.js-tabs');
-const tabRadioNodes = document.querySelectorAll('input[name="tabs"]');
+const tabRadioNodes = document.querySelectorAll('input[name^="tabs"]');
 
 const tabs = [...tabRadioNodes].reduce((obj, radio) => {
   const tabId = radio.id;

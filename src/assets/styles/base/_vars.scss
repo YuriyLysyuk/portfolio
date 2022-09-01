@@ -4,16 +4,19 @@
 
 // Fonts
 $font-family: 'Fira Code', monospace;
-$font-family-title: 'Fira Code', monospace;
-
-$header-font: $font-family-title;
-$header-font-weight: 400;
+$font-family-vf: 'Fira Code VF', monospace;
 
 $body-font: $font-family;
 $body-font-weight: 400;
+$body-font-vf-weight: 450;
+
+$header-font: $font-family;
+$header-font-weight: 400;
+$header-font-vf-weight: 450;
 
 $code-font: $font-family;
 $code-font-weight: 400;
+$code-font-vf-weight: 450;
 
 // For REM / EM
 $basic-font-size: 62.5%;
@@ -37,17 +40,32 @@ $gray: #ccc;
 $body-bg-color: #010c15;
 $layout-bg-color: #011627;
 $text-color: #e5e9f0;
-$inverted-text-color: $black;
+$inverted-text-color: #607b96;
+$text-dark-color: #011221;
 $code-bg-color: #011221;
-$menu-color: #607b96;
+$menu-color: $inverted-text-color;
 $menu-hover-color: $text-color;
 $accent-color: $orange;
 $border-color: #1e2d3d;
+$border-focus-color: #607b96;
+$button-default-bg-color: #1c2b3a;
+$button-default-bg-hover-color: #263b50;
+$button-default-text-color: $text-color;
+$button-primary-bg-color: $orange;
+$button-primary-bg-hover-color: #ffac6b;
+$button-primary-text-color: #01080e;
+$button-ghost-bg-color: transparent;
+$button-ghost-text-color: $text-color;
+$button-ghost-border-color: $text-color;
 
 // Margins, paddings, gaps, borders
 $gap: 1rem;
+$gap-2x: 2rem;
+$gap-3x: 3rem;
+$gap-4x: 4rem;
 $border-width: 0.1rem;
 $border-radius: 0.8rem;
+$border-radius-2x: 1.6rem;
 $side-padding-mobile: 1.7rem;
 $side-padding-pc: 3.2rem;
 $sidebar-width: 24.2rem;

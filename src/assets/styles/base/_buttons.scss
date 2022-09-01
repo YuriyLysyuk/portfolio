@@ -1,0 +1,47 @@
+/**
+ * Buttons
+ */
+
+@use '~Styles/base/vars' as v;
+@use '~Styles/base/placeholders';
+
+.button {
+  padding: 1rem 1.4rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  border-radius: v.$border-radius;
+  @extend %transition;
+
+  &_default {
+    color: v.$button-default-text-color;
+    background-color: v.$button-default-bg-color;
+    border: v.$border-width solid v.$button-default-bg-color;
+
+    &:hover,
+    &:focus {
+      background-color: v.$button-default-bg-hover-color;
+    }
+  }
+
+  &_primary {
+    color: v.$button-primary-text-color;
+    background-color: v.$button-primary-bg-color;
+    border: v.$border-width solid v.$button-primary-bg-color;
+
+    &:hover,
+    &:focus {
+      background-color: v.$button-primary-bg-hover-color;
+    }
+  }
+
+  &_ghost {
+    color: v.$button-ghost-text-color;
+    background-color: v.$button-ghost-bg-color;
+    border: v.$border-width solid v.$button-ghost-border-color;
+
+    &:hover,
+    &:focus {
+      border-color: rgba(v.$button-ghost-border-color, 0.5);
+    }
+  }
+}

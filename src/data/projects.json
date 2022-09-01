@@ -1,0 +1,71 @@
+{
+  "id": "projects",
+  "name": "Проекты",
+  "type": "filter",
+  "iconClasses": ["fa-solid", "fa-globe"],
+  "isChecked": true,
+  "filters": {
+    "all": {
+      "name": "Все",
+      "iconClasses": ["fa-solid", "fa-globe"],
+      "isChecked": true
+    },
+    "js": {
+      "name": "JavaScript",
+      "iconClasses": ["fa-brands", "fa-js-square"]
+    },
+    "html": {
+      "name": "HTML",
+      "iconClasses": ["fa-brands", "fa-html5"]
+    },
+    "pug": {
+      "name": "Pug",
+      "iconClasses": ["fa-solid", "fa-dog"]
+    },
+    "scss": {
+      "name": "SCSS",
+      "iconClasses": ["fa-brands", "fa-sass"]
+    },
+    "php": {
+      "name": "PHP",
+      "iconClasses": ["fa-brands", "fa-php"]
+    }
+  },
+  "items": [
+    {
+      "id": "portfolio",
+      "name": "Портфолио",
+      "description": "Лендинг-портфолио в стиле редактора кода",
+      "img": "portfolio.jpg",
+      "demo": "https://YuriyLysyuk.ru",
+      "source": "https://github.com/YuriyLysyuk/portfolio",
+      "tags": ["js", "pug", "scss"]
+    },
+    {
+      "id": "rko-guru",
+      "name": "РКО Гуру",
+      "description": "Калькулятор стоимости обслуживания расчетного счета по тарифам разных банков для ИП и ООО",
+      "img": "rko-guru.jpg",
+      "demo": "https://rko.guru",
+      "tags": ["js", "html", "scss", "php"]
+    },
+    {
+      "id": "elektro-spektr",
+      "name": "Электро спектр",
+      "description": "WordPress тема для сайта-каталога кабельного завода",
+      "img": "elektro-spektr.jpg",
+      "demo": "https://elektro-spektr.ru/",
+      "source": "https://github.com/YuriyLysyuk/elektro-spektr",
+      "tags": ["html", "scss", "php"]
+    },
+    {
+      "id": "myseahomes-marketing",
+      "name": "Myseahomes",
+      "description": "Лендинг для отдела маркетинга сайта myseahomes.com",
+      "img": "myseahomes-marketing.jpg",
+      "demo": "https://myseahomes.com/boost/",
+      "source": "https://github.com/YuriyLysyuk/myseahomes-marketing",
+      "tags": ["html", "scss", "php"]
+    }
+  ]
+}

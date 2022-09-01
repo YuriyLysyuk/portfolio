@@ -1,0 +1,10 @@
+mixin side-menu-links-list(items)
+  .side-menu__list
+    each item, id in items
+      - const { link, name, title, iconClasses } = item;
+
+      a.file(href=link, title=title, rel='nofollow', target='_blank')
+        span
+          i(class=iconClasses)
+          |
+          | #{ name }

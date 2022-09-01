@@ -1,12 +1,17 @@
-extends ~Views/layouts/default.pug
+extends ~Views/layouts/default
 
+include ~Views/components/nav
 include ~Views/components/side-menu
 include ~Views/components/tabs
+include ~Views/components/project-list
 
 block variables
   -
     const common = require('~Data/common.json');
-    const {head: {title, description}, tabsMenu} = require('~Data/home.json');
+    const {head: {title, description}} = require('~Data/home.json');
+    const tabsAbout = require('~Data/tabs-about.json');
+    const projects = require('~Data/projects.json');
+    const contacts = require('~Data/contacts.json');
 
 block append style
   link(href=require('~Styles/home.scss'), rel='stylesheet')
@@ -16,43 +21,69 @@ block append script
 
 block content
   header.header
-    include ~Views/components/navbar.pug
+    nav.navbar
+      a.navbar__logo(href='/')= common.site.name
+      input#menu-toggle.js-menu-toggle.menu-toggle(type='checkbox')
+      label.hamburger(for='menu-toggle')
+        span.hamburger__line
+      +nav('header')
 
   main.js-main.main 
     section#hello.js-section.section.section_wide.hello
-      p Привет 👋, меня зовут
+      p 
+        | Привет
+        |
+        i.fa-solid.fa-hand-spock.hello__icon
+        | , меня зовут
       h1 Юрий Лысюк
       p.hello__desc Front-end developer
       hr.hr_invisible.hello__hr
       p.comment.text_size_smaller Посетите мою страничку на GitHub
       p.js-code.code.text_size_smaller.
-        const githubLink = '#{ common.contacts.github.link }';
+        const githubLink = '#{ contacts.items.github.link }';
+      p.comment.text_size_smaller или скачайте резюме
+      p.js-code.code.text_size_smaller.
+        const cvLink = '#{ common.cv.link }';
 
     section#about.js-section.section.section_2col
       h2.js-convert-title.h2.text_hidden_pc Обо мне
 
       aside.js-tabs-menu.sidebar
-        +side-menus(tabsMenu)
-
-        .side-menu
-          input#toggle-contacts.side-menu__toggle(type='checkbox')
-          label.side-menu__title(for='toggle-contacts')
-            i.fa-solid.fa-caret-right
-            |
-            | Контакты
-
-          .side-menu__list
-            a.file(href='mailto:work@YuriyLysyuk.ru')
-              span
-                i.fa-solid.fa-envelope
-                |
-                | work@YuriyLysyuk.ru
-
-            a.file(href='tel:+79519790755')
-              span
-                i.fa-solid.fa-phone
-                |
-                | +7 (951) 979-07-55
+        +side-menus(tabsAbout)
 
       .column
-        +tabs(tabsMenu)
+        +tabs-wrap(["js-tabs", "tabs_view_code"])
+          +tab-groups(tabsAbout, 'tabs-about')
+
+    section#projects.js-section.section.section_2col
+      h2.js-convert-title.h2.text_hidden_pc Проекты
+
+      aside.js-filter-menu.sidebar
+        +side-menu(projects)
+        +side-menu(contacts)
+
+      .column
+        +tabs-wrap(["js-filters"])
+          +tab(projects, 'tab-projects', 'clear')
+
+          +tab-content-wrap
+            +project-list(projects.items)
+
+    //- section#contacts.js-section.section.section_2col
+    //-   h2.js-convert-title.h2.text_hidden_pc Контакты
+
+    //-   aside.sidebar
+    //-     +side-menu(contacts)
+
+    //-   .column
+    //-     +tabs-wrap
+    //-       +tab(contacts, 'tab-contacts')
+
+    //-       +tab-content-wrap
+    //-         +contact-form
+
+  footer.footer
+    nav.navbar
+      .navbar__text.js-convert-title Ищите меня в:
+      .navbar__nav.nav
+        +nav('footer')

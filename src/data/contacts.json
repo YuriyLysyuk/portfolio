@@ -1,0 +1,45 @@
+{
+  "id": "contacts",
+  "name": "Контакты",
+  "type": "links",
+  "iconClasses": ["fa-solid", "fa-globe"],
+  "isChecked": true,
+  "items": {
+    "phone": {
+      "link": "tel:+79519790755",
+      "name": "+7 (951) 979-07-55",
+      "title": "Телефон",
+      "iconClasses": ["fa-solid", "fa-phone"]
+    },
+    "mail": {
+      "link": "mailto:work@YuriyLysyuk.ru",
+      "name": "work@YuriyLysyuk.ru",
+      "title": "Почта",
+      "iconClasses": ["fa-solid", "fa-envelope"]
+    },
+    "telegram": {
+      "link": "https://t.me/YuriyLysyuk",
+      "name": "Telegram",
+      "title": "Аккаунт Лысюка Юрия в Telegram",
+      "iconClasses": ["fa-brands", "fa-telegram"]
+    },
+    "linkedin": {
+      "link": "https://www.linkedin.com/in/YuriyLysyuk",
+      "name": "LinkedIn",
+      "title": "Профиль Лысюка Юрия на LinkedIn",
+      "iconClasses": ["fa-brands", "fa-linkedin"]
+    },
+    "github": {
+      "link": "https://github.com/YuriyLysyuk",
+      "name": "GitHub",
+      "title": "Профиль Лысюка Юрия на GitHub",
+      "iconClasses": ["fa-brands", "fa-github"]
+    },
+    "codewars": {
+      "link": "https://www.codewars.com/users/YuriyLysyuk",
+      "name": "Codewars",
+      "title": "Профиль Лысюка Юрия на Codewars",
+      "iconClasses": ["fa-solid", "fa-code"]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+mixin side-menu-filter-list(filters)
+  .side-menu__list.filters
+    each filter, id in filters
+      - const { name, iconClasses, isChecked } = filter;
+
+      div
+        input.filter__toggle(
+          id=`filter-${id}`,
+          name='filters',
+          data-filter-id=id,
+          type='radio',
+          checked=isChecked
+        )
+
+        label.file.filter__label(for=`filter-${id}`)
+          span
+            i.file__icon(class=iconClasses)
+            |
+            | #{ name }

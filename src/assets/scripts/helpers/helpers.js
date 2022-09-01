@@ -5,6 +5,6 @@
   const convertTitleNodes = document.querySelectorAll('.js-convert-title');
 
   convertTitleNodes.forEach((node) => {
-    node.innerText = node.innerText.split(' ').join('-');
+    node.innerText = node.innerText.toLowerCase().split(' ').join('-');
   });
 })();

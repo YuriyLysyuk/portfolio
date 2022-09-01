@@ -1,10 +1,14 @@
-include ~Views/components/side-menu-list
+include ~Views/components/side-menu-tab-list
+include ~Views/components/side-menu-filter-list
+include ~Views/components/side-menu-links-list
 
 mixin side-menus(sideMenus)
   each sideMenu in sideMenus
     +side-menu(sideMenu)
 
-mixin side-menu({id, name, isChecked, list})
+mixin side-menu(sideMenu)
+  - const { id, name, type, isChecked, items, filters } = sideMenu;
+
   .side-menu
     input.side-menu__toggle(id=`toggle-${id}`, type='checkbox', checked=isChecked)
 
@@ -13,4 +17,10 @@ mixin side-menu({id, name, isChecked, list})
       |
       | #{ name }
 
-    +side-menu-list(list)
+    case type
+      when 'tabs'
+        +side-menu-tab-list(items)
+      when 'filter'
+        +side-menu-filter-list(filters)
+      when 'links'
+        +side-menu-links-list(items)

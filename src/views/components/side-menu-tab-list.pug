@@ -1,7 +1,7 @@
-mixin side-menu-list(list)
+mixin side-menu-tab-list(items)
   .side-menu__list
-    each tab in list
-      - const { id, name, order, iconClasses, isChecked } = tab;
+    each item in items
+      - const { id, name, order, iconClasses, isChecked } = item;
 
       label.file(
         class=isChecked ? 'file_active' : '',
