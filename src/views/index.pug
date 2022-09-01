@@ -68,11 +68,18 @@ block content
           +tab-content-wrap
             +project-list(projects.items)
 
-    section#contacts.js-section.section.section_2col
-      h2.js-convert-title.h2.text_hidden_pc Контакты
+    //- section#contacts.js-section.section.section_2col
+    //-   h2.js-convert-title.h2.text_hidden_pc Контакты
 
-      aside.sidebar
-        +side-menu(contacts)
+    //-   aside.sidebar
+    //-     +side-menu(contacts)
+
+    //-   .column
+    //-     +tabs-wrap
+    //-       +tab(contacts, 'tab-contacts')
+
+    //-       +tab-content-wrap
+    //-         +contact-form
 
   footer.footer
     nav.navbar
