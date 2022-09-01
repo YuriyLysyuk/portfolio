@@ -18,7 +18,7 @@ module.exports = (env, argv) => {
 
     output: {
       path: path.join(__dirname, 'dist/'),
-      publicPath: '/',
+      // publicPath: './',
       clean: true,
       filename: 'assets/js/[name].[contenthash:8].js',
     },
@@ -27,6 +27,7 @@ module.exports = (env, argv) => {
       alias: {
         Views: path.join(__dirname, 'src/views/'),
         Images: path.join(__dirname, 'src/assets/images/'),
+        Favicons: path.join(__dirname, 'src/assets/favicons/'),
         Fonts: path.join(__dirname, 'src/assets/fonts/'),
         Styles: path.join(__dirname, 'src/assets/styles/'),
         Scripts: path.join(__dirname, 'src/assets/scripts/'),
@@ -88,13 +89,15 @@ module.exports = (env, argv) => {
           test: /\.(png|svg)$/i,
           type: 'asset',
           include: /assets\/images/,
-          exclude: /favicon/, // don't inline favicon
           parser: {
             dataUrlCondition: {
               maxSize: 4 * 1024,
             },
           },
         },
+
+        // favicons
+        {
       ],
     },
 
