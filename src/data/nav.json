@@ -16,7 +16,7 @@
         "name": "Проекты"
       },
       {
-        "link": "#contacts",
+        "link": "#projects",
         "name": "Контакты",
         "classes": ["nav__link_push_right"]
       }
