@@ -16,8 +16,8 @@ Yuri Lysyuk's portfolio, similar to a code editor.
 ## Functionality
 
 - Adaptive layout
-- Interective tabs and filters
-- Use observer to check active section
+- Interactive tabs and filters
+- Use observer to track active section
 
 ## Stack
 

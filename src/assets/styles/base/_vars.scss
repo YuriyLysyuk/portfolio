@@ -72,5 +72,5 @@ $sidebar-width: 24.2rem;
 
 // CSS variables
 :root {
-  --main-node-height: auto;
+  --main-node-height: calc(100vh - 17rem);
 }
