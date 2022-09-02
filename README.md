@@ -4,6 +4,12 @@ Yuri Lysyuk's portfolio, similar to a code editor.
 
 [Live](https://yuriylysyuk.ru)
 
+⚠️⚠️ At the moment, the project is under active development. ⚠️⚠️
+
+## ToDo
+
+- add contacts section with interactive form
+
 ## How to run project
 
 1. Open project in VSCode (for example )
