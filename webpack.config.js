@@ -64,6 +64,16 @@ module.exports = (env, argv) => {
           use: ['css-loader', 'sass-loader'],
         },
 
+        // favicons
+        {
+          test: /\.(png|svg|ico|xml|webmanifest)$/i,
+          type: 'asset/resource',
+          include: /assets\/favicons/,
+          generator: {
+            filename: '[name][ext]',
+          },
+        },
+
         // fonts
         {
           test: /\.(woff2?|ttf|otf|eot|svg)$/i,
@@ -94,16 +104,6 @@ module.exports = (env, argv) => {
             dataUrlCondition: {
               maxSize: 4 * 1024,
             },
-          },
-        },
-
-        // favicons
-        {
-          test: /\.(png|svg|ico|xml|webmanifest)$/i,
-          type: 'asset/resource',
-          include: /assets\/favicons/,
-          generator: {
-            filename: '[name][ext]',
           },
         },
       ],
