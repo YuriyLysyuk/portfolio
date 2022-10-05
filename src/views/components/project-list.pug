@@ -8,7 +8,10 @@ mixin project-list(list)
           span.comment.text_size_smaller #{ project.id }
 
         .project__card
-          img.project__img(src=require(`~Images/${project.img}`))
+          img.project__img(
+            src=require(`~Images/${project.img}`),
+            alt=project.description
+          )
 
           .project__tags
             each tag in project.tags
