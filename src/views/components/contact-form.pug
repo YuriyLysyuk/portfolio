@@ -1,0 +1,27 @@
+mixin contact-form
+  .contact-form
+    .contact-form__col
+      form.form
+        label.form__label(for='name') _имя:
+        input.form__control(name='name', type='text', required)
+        label.form__label(for='email') _почта:
+        input.form__control(name='email', type='email', required)
+        label.form__label(for='message') _сообщение:
+        textarea.form__control(name='message', rows='6')
+        button.button.button_default(type='submit') отправить-сообщение
+
+    .contact-form__col
+      pre
+        code.js-code.
+          const button = document.querySelector('#sendBtn');
+
+          const message = {
+            name: "Jonathan Davis",
+            email: "",
+            message: "",
+            date: "Thu 21 Apr"
+          }
+
+          button.addEventListener('click', () => {
+            form.send(message);
+          })
