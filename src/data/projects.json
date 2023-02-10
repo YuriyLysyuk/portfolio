@@ -10,6 +10,10 @@
       "iconClasses": ["fa-solid", "fa-globe"],
       "isChecked": true
     },
+    "react": {
+      "name": "React",
+      "iconClasses": ["fa-brands", "fa-react"]
+    },
     "js": {
       "name": "JavaScript",
       "iconClasses": ["fa-brands", "fa-js-square"]
@@ -33,6 +37,15 @@
   },
   "items": [
     {
+      "id": "scan-service",
+      "name": "СКАН",
+      "description": "Сервис по поиску публикаций о компании по ее ИНН",
+      "img": "scan-service.jpg",
+      "demo": "https://scan.YuriyLysyuk.ru",
+      "source": "https://github.com/YuriyLysyuk/scan-service",
+      "tags": ["react", "js", "scss"]
+    },
+    {
       "id": "portfolio",
       "name": "Портфолио",
       "description": "Лендинг-портфолио в стиле редактора кода",
@@ -46,7 +59,7 @@
       "name": "РКО Гуру",
       "description": "Калькулятор стоимости обслуживания расчетного счета по тарифам разных банков для ИП и ООО",
       "img": "rko-guru.jpg",
-      "demo": "https://rko.YuriyLysyuk.ru",
+      "demo": "https://rko.guru",
       "tags": ["js", "html", "scss", "php"]
     },
     {

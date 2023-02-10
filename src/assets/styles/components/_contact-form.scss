@@ -1,0 +1,27 @@
+/**
+ * Contact form
+ */
+
+@use '~Styles/base/vars' as v;
+@use '~Styles/base/placeholders';
+@use '~Styles/vendors/include-media' as *;
+
+.contact-form {
+  display: flex;
+
+  &__col {
+    @extend %block-padding;
+
+    @include media('>=lg') {
+      padding: 12rem;
+    }
+  }
+
+  &__col:first-child {
+    border-right: v.$border-width solid v.$border-color;
+  }
+
+  &__col:last-child {
+  }
+
+}
