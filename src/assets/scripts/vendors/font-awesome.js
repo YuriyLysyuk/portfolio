@@ -8,6 +8,7 @@ import { faJsSquare } from '@fortawesome/free-brands-svg-icons/faJsSquare';
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons/faHtml5';
 import { faSass } from '@fortawesome/free-brands-svg-icons/faSass';
 import { faPhp } from '@fortawesome/free-brands-svg-icons/faPhp';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
 
 import { faHandSpock } from '@fortawesome/free-solid-svg-icons/faHandSpock';
 import { faXmark } from '@fortawesome/free-solid-svg-icons/faXmark';
@@ -36,6 +37,7 @@ const icons = [
   faUpRightFromSquare,
   faDog,
   faGlobe,
+  faReact,
 ];
 
 library.add(icons);
