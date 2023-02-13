@@ -1,35 +1,29 @@
-# Portfolio
+# Личное портфолио
 
-Yuri Lysyuk's portfolio, similar to a code editor.
+Лендинг-портфолио Лысюка Юрия, похожее на редактор кода.
 
 [Live](https://yuriylysyuk.ru)
 
-⚠️⚠️ At the moment, the project is under active development. ⚠️⚠️
+## Как запустить проект
 
-## ToDo
+1. Открыть проект в VSCode (например)
+2. Запустить `npm i` в терминале для установки всех зависимостей
+3. Использовать любую команду из списка для сборки проекты:
+   - `npm run build` - сборка production версии
+   - `npm run dev` - сборка development версии
+   - `npm run start` - сборка development версии с автообновлением
 
-- add contacts section with interactive form
+## Функциональность
 
-## How to run project
+- Адаптивная версия
+- Интерактивные табы и фильры
+- Использование Observer для отслеживания активной секции
 
-1. Open project in VSCode (for example )
-2. Run command `npm i` in terminal (console) for installing all required packages
-3. For builing project you can use the following commands:
-   - `npm run build` - building production version
-   - `npm run dev` - building development version
-   - `npm run start` - building development hot-reloaded version
-
-## Functionality
-
-- Adaptive layout
-- Interactive tabs and filters
-- Use observer to track active section
-
-## Stack
+## Стэк
 
 - JavaScript
 - Pug
 - SCSS
 - Webpack
 
-Design by [Yanka Darelova](https://www.behance.net/darelova)
+Дизайн: [Yanka Darelova](https://www.behance.net/darelova)
