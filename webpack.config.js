@@ -55,6 +55,9 @@ module.exports = (env, argv) => {
           loader: PugPlugin.loader, // pug-plugin already contain the pug-loader
           options: {
             method: 'render', // fast method to generate static HTML files
+            data: {
+              isProd,
+            },
           },
         },
 
