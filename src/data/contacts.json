@@ -11,12 +11,6 @@
       "title": "Телефон",
       "iconClasses": ["fa-solid", "fa-phone"]
     },
-    "mail": {
-      "link": "mailto:work@YuriyLysyuk.ru",
-      "name": "work@YuriyLysyuk.ru",
-      "title": "Почта",
-      "iconClasses": ["fa-solid", "fa-envelope"]
-    },
     "telegram": {
       "link": "https://t.me/YuriyLysyuk",
       "name": "Telegram",
