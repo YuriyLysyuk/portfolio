@@ -37,6 +37,15 @@
   },
   "items": [
     {
+      "id": "prof-rem-stroi",
+      "name": "ПрофРемСтрой",
+      "description": "Wordpress-тема для сайта строительных услуг",
+      "img": "prof-rem-stroi.jpg",
+      "demo": "https://prof-rem-stroi.ru",
+      "source": "https://github.com/YuriyLysyuk/prof-rem-stroi",
+      "tags": ["html", "php", "js", "scss"]
+    },
+    {
       "id": "scan-service",
       "name": "СКАН",
       "description": "Сервис по поиску публикаций о компании по ее ИНН",
