@@ -23,6 +23,12 @@
       "title": "Профиль Лысюка Юрия на GitHub",
       "iconClasses": ["fa-brands", "fa-github"]
     },
+    "leetcode": {
+      "link": "https://leetcode.com/lysyuk-y/",
+      "name": "LeetCode",
+      "title": "Профиль Лысюка Юрия на LeetCode",
+      "iconClasses": ["fa-solid", "fa-code"]
+    },
     "codewars": {
       "link": "https://www.codewars.com/users/YuriyLysyuk",
       "name": "Codewars",
