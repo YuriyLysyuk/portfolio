@@ -64,11 +64,11 @@
       "tags": ["js", "pug", "scss"]
     },
     {
-      "id": "rko-guru",
-      "name": "РКО Гуру",
+      "id": "rko",
+      "name": "РКО",
       "description": "Калькулятор стоимости обслуживания расчетного счета по тарифам разных банков для ИП и ООО",
       "img": "rko-guru.jpg",
-      "demo": "https://rko.guru",
+      "demo": "https://rko.yuriylysyuk.ru",
       "tags": ["js", "html", "scss", "php"]
     },
     {
