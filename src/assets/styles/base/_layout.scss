@@ -45,6 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
+    min-height: calc(var(--main-node-height) + v.$border-width);
 
     &:not(:last-child) {
       border-bottom: v.$border-width solid v.$border-color;
