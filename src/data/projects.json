@@ -37,18 +37,9 @@
   },
   "items": [
     {
-      "id": "prof-rem-stroi",
-      "name": "ПрофРемСтрой",
-      "description": "Wordpress-тема для сайта строительных услуг",
-      "img": "prof-rem-stroi.jpg",
-      "demo": "https://prof-rem-stroi.ru",
-      "source": "https://github.com/YuriyLysyuk/prof-rem-stroi",
-      "tags": ["html", "php", "js", "scss"]
-    },
-    {
       "id": "scan-service",
       "name": "СКАН",
-      "description": "Сервис по поиску публикаций о компании по ее ИНН",
+      "description": "Сервис по поиску публикаций о компании по ИНН",
       "img": "scan-service.jpg",
       "demo": "https://scan.YuriyLysyuk.ru",
       "source": "https://github.com/YuriyLysyuk/scan-service",
@@ -64,21 +55,30 @@
       "tags": ["js", "pug", "scss"]
     },
     {
-      "id": "rko",
-      "name": "РКО",
-      "description": "Калькулятор стоимости обслуживания расчетного счета по тарифам разных банков для ИП и ООО",
-      "img": "rko-guru.jpg",
-      "demo": "https://rko.yuriylysyuk.ru",
-      "tags": ["js", "html", "scss", "php"]
+      "id": "prof-rem-stroi",
+      "name": "ПрофРемСтрой",
+      "description": "Сайт услуг строительной компании ПрофРемСтрой",
+      "img": "prof-rem-stroi.jpg",
+      "demo": "https://prof-rem-stroi.ru",
+      "source": "https://github.com/YuriyLysyuk/prof-rem-stroi",
+      "tags": ["html", "php", "js", "scss"]
     },
     {
       "id": "elektro-spektr",
       "name": "Электро спектр",
-      "description": "WordPress тема для сайта-каталога кабельного завода",
+      "description": "Сайт-каталог продукции кабельного завода Спектр Плюс",
       "img": "elektro-spektr.jpg",
-      "demo": "https://elektro-spektr.ru/",
+      "demo": "https://spektr-plyus.ru",
       "source": "https://github.com/YuriyLysyuk/elektro-spektr",
       "tags": ["html", "scss", "php"]
+    },
+    {
+      "id": "rko",
+      "name": "РКО Гуру",
+      "description": "Сервис подбора выгодного расчетного счета на основе оборотов компании",
+      "img": "rko-guru.jpg",
+      "demo": "https://rko.yuriylysyuk.ru",
+      "tags": ["js", "html", "scss", "php"]
     },
     {
       "id": "myseahomes-marketing",
