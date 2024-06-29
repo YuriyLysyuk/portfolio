@@ -37,6 +37,16 @@
         "isNofollow": true
       },
       {
+        "link": "#{linkedin-link}",
+        "name": "#{linkedin-name}",
+        "title": "#{linkedin-title}",
+        "classes": ["nav__link_type_social"],
+        "onlyIcon": true,
+        "iconClasses": ["fa-brands", "fa-linkedin"],
+        "isTargetBlank": true,
+        "isNofollow": true
+      },
+      {
         "link": "#{github-link}",
         "name": "#{github-name}",
         "title": "#{github-title}",
