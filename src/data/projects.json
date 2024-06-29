@@ -39,7 +39,7 @@
     {
       "id": "scan-service",
       "name": "СКАН",
-      "description": "Сервис по поиску публикаций о компании по ИНН",
+      "description": "Сервис поиска публикаций о компании в СМИ по ИНН",
       "img": "scan-service.jpg",
       "demo": "https://scan.YuriyLysyuk.ru",
       "source": "https://github.com/YuriyLysyuk/scan-service",
@@ -60,7 +60,6 @@
       "description": "Сайт услуг строительной компании ПрофРемСтрой",
       "img": "prof-rem-stroi.jpg",
       "demo": "https://prof-rem-stroi.ru",
-      "source": "https://github.com/YuriyLysyuk/prof-rem-stroi",
       "tags": ["html", "php", "js", "scss"]
     },
     {
@@ -69,7 +68,6 @@
       "description": "Сайт-каталог продукции кабельного завода Спектр Плюс",
       "img": "elektro-spektr.jpg",
       "demo": "https://spektr-plyus.ru",
-      "source": "https://github.com/YuriyLysyuk/elektro-spektr",
       "tags": ["html", "scss", "php"]
     },
     {
@@ -86,7 +84,6 @@
       "description": "Лендинг для отдела маркетинга сайта myseahomes.com",
       "img": "myseahomes-marketing.jpg",
       "demo": "https://myseahomes.com/boost/",
-      "source": "https://github.com/YuriyLysyuk/myseahomes-marketing",
       "tags": ["html", "scss", "php"]
     }
   ]
